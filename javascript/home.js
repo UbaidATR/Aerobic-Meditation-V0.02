@@ -12,6 +12,5 @@ $(document).ready(function(){
   $(window).load(function(){
     $('loading').show();
   });
-  $(document).ready(function(){
-    $('#loading').hide;
-  })
+  var a='2';
+  console.log("a");

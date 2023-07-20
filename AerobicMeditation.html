@@ -2,68 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aerobic Meditation</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
     integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="Css\home.css">
-  <script src="javascript\index.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="Images\favicon-Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="Css\home.css" />
+  <script src="javascript\home.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="Images\favicon-Logo.png" type="image/x-icon" />
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<style>
+<style></style>
 
-</style>
-
-<body>
-  <div   class="bg-darkcontainer-fliud">
+<body class="bg-dark">
+  <div id="load-wrapper" class="container-fliud load-wrapper">
     <i id="loading" class="fa fa-spin fa-spinner"></i>
   </div>
-  <div
-    class="social-icons container-fliud d-flex align-items-center d-sm-none d-md-none d-lg-flex justify-content-around bg-dark">
-    <div id="icon-nav">
-      <a href=""><i class="fa-brands fa-facebook"></i></a>
-      <a href=" https://wa.me/03165923893" target="_blank"><i class="fa-brands px-sm-4 fa-instagram"></i></a>
-      <a href=""><i class="fa fa-envelope"></i></a>
-      <a href="#"><i class="fa-brands px-sm-4 fa-youtube"></i></a>
-    </div>
-    <a class="logo" href="#"><img src="Images\favicon-Logo-2.png" alt=""></a>
-    <div class="div">
-      <button class="btn btn-outline-warning" onclick="document.location.href=''">Sing-In</button>
-      <button class="btn btn-outline-warning">Sing-Up</button>
-    </div>
-  </div>
-  <nav id="sticky-nav" style="background-color: rgb(143, 140, 140);" class="navbar p-3 navbar-expand-lg navbar-light">
+  <nav id="sticky-nav" style="background-color: rgb(143, 140, 140)" class="navbar p-3 navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a class="logo d-md-none d-sm-block" href="#"><img src="Images\favicon-Logo-2.png" alt=""></a>
+      <a class="logo d-md-none d-sm-block" href="#"><img src="Images\favicon-Logo-2.png" alt="" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentl"
         aria-controls="navbarSupportedContentl" aria-expanded="false" aria-label="Toggle navigation">
-        <i id="arrow-down" class="fa fa-arrow-down text-warning fs-1"></i><i id="arrow-up" class="text-warning fs-1 fa fa-arrow-up"
-          style="display: none;"></i>
+        <i id="arrow-down" class="fa fa-arrow-down text-warning fs-1"></i><i id="arrow-up"
+          class="text-warning fs-1 fa fa-arrow-up" style="display: none"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContentl">
         <div class="div">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
             <li class="nav-item hover">
               <a class="x-hover nav-link mx-md-4" href="#">Home</a>
             </li>
+            <hr class="dropdown-divider">
             <li class="nav-item dropdown">
               <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,42 +54,61 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Soulful Pulse</a></li>
-                <li><a class="dropdown-item" href="#">Meditative Motion:</a></li>
                 <li>
-                  <hr class="dropdown-divider">
+                  <a class="dropdown-item" href="#">Meditative Motion:</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
                 </li>
                 <li><a class="dropdown-item" href="#">ZenFlow</a></li>
               </ul>
             </li>
+            <hr class="dropdown-divider">
             <li class="nav-item dropdown">
               <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Articles
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"> Boosting Mental and Physical Health</a></li>
-                <li><a class="dropdown-item" href="#">Unleashing Your Full Potential</a></li>
                 <li>
-                  <hr class="dropdown-divider">
+                  <a class="dropdown-item" href="#">
+                    Boosting Mental and Physical Health</a>
                 </li>
-                <li><a class="dropdown-item" href="#"> Cultivating Mind-Body Harmony</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Unleashing Your Full Potential</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Cultivating Mind-Body Harmony</a>
+                </li>
               </ul>
             </li>
+            <hr class="dropdown-divider">
             <li class="nav-item dropdown">
               <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Books
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Aerobic Meditation</a></li>
-                <li><a class="dropdown-item" href="#">The Power of Flow</a></li>
-                <li><a class="dropdown-item" href="#">The Rhythmic Path</a></li>
                 <li>
-                  <hr class="dropdown-divider">
+                  <a class="dropdown-item" href="#">Aerobic Meditation</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">The Power of Flow</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">The Rhythmic Path</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
                 </li>
                 <li><a class="dropdown-item" href="#"> Mindful Motion</a></li>
               </ul>
             </li>
+            <hr class="dropdown-divider">
             <li class="nav-item hover">
               <a class="x-hover nav-link mx-md-4" href="#">Feedback</a>
             </li>
@@ -114,115 +116,192 @@
         </div>
 
 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-flex align-items-center d-md-none" id="icon-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands px-sm-4 fa-instagram"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands px-sm-4 fa-twitter"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands px-sm-4 fa-youtube"></i></a>
-          </li>
-        </ul>
-        <div class="div d-md-none">
-          <button class="btn btn-outline-warning" onclick="document.location.href=''">Sign-In</button>
+        <div class="div ">
+          <button class="btn btn-outline-warning" onclick="document.location.href=''">
+            Sign-In
+          </button>
           <button class="btn btn-outline-warning">Sing-Up</button>
         </div>
       </div>
     </div>
   </nav>
-  <section class="search-form">
-    <div class="container">
+  <div id="carouselExampleIndicators" class="carousel slide d-sm-none d-dm-block d-lg-block justify-content-center align-items-center"data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    
+    <div class="carousel-inner text-white d-flex">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div style="position: absolute;" class="col-md-12">
+              <h1 class="anim-text" data-fill-text="Helvig cas study">Helvig cas study</h1>
+            </div>
+            <div style="position: relative;" class="col-md-5">
+              <img class="anim-img" src="Images\Aero-exercise.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div style="position: absolute;" class="col-md-12">
+              <h1 class="anim-text" data-fill-text="Helvig cas study">Helvig cas study</h1>
+            </div>
+            <div style="position: relative;" class="col-md-5">
+              <img class="anim-img" src="Images\Aero-exercise.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div style="position: absolute;" class="col-md-12">
+              <h1 class="anim-text" data-fill-text="Helvig cas study">Helvig cas study</h1>
+            </div>
+            <div style="position: relative;" class="col-md-5">
+              <img class="anim-img" src="Images\Aero-exercise.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+     
+  </div>
+  <div class="container">
+    <div class="row text-center ">
+      <h1 class="text-warning">Aerobic Meditation</h1>
+    </div>
+    <div class="row">
       <div class="row">
-        <div class="col-6">
-          <h1>Search about our professional courses and books here</h1>
-          <form action="" class="d-flex">
-            <input id="tags" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button id="btn-anime" class="btn btn-outline-success  mx-2 btn-bg" type="submit">Search</button>
-          </form>
+        <div class="col-md-12 ">
+          <h3 class="text-info">Introduction to Aerobic Meditation</h3>
+          <p class="text-white" style="text-align: justify;">
+            In our fast-paced, stress-laden lives, finding ways to achieve mental clarity and physical fitness is of
+            utmost importance. While meditation and exercise are known individually for their numerous health benefits,a
+            recent wellness trend has emerged that combines these two practices: aerobic meditation. This
+            innovativeapproach merges the principles of mindfulness and aerobic exercise, offering a unique path to
+            achievingholistic well-being. In this article, we will explore the concept of aerobic meditation, its
+            benefits, andhow to ncorporate it into your daily routine.
+          </p>
+          <a href="#"><span id="show-more-icon1">Show more<i class="fa fa-arrow-down"></i></span>
+            <span style="display: none;" id="show-more-icon2">Show less<i class="fa fa-arrow-up"></i></span></a>
+          <div id="show-more-2" style="display: none;" class="row justify-content-between">
+            <div class="col-md-3"><video src="vedio\medi-yoga-1.mp4" autoplay="'true" loop class="img-fluid" controls
+                class="vedio4"></video></div>
+            <div class="col-md-3"><video src="vedio\medi-yoga-1.mp4" autoplay="'true" loop class="img-fluid" controls
+                class="vedio4"></video></div>
+            <div class="col-md-3"><video src="vedio\medi-yoga-1.mp4" autoplay="'true" loop class="img-fluid" controls
+                class="vedio4"></video></div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-    <div class="container-fliud p-5 bg-dark">
-      <h1 class="text-center h1 anime">Aerobic Meditation</h1>
-      <div class="row pt-2 mt-3 align-items-center">
-        <div class="anim4 col-md-8">
-          <h2>Introduction</h2>
-          <p>In our fast-paced, stress-laden lives, finding ways to achieve mental clarity and physical fitness is of
-            utmost importance. While meditation and exercise are known individually for their numerous health benefits,
-            a recent wellness trend has emerged that combines these two practices: aerobic meditation. This innovative
-            approach merges the principles of mindfulness and aerobic exercise, offering a unique path to achieving
-            holistic well-being. In this article, we will explore the concept of aerobic meditation, its benefits, and
-            how to ncorporate it into your daily routine.</p>
-        </div>
-        <div class="col-md-4 custom-bevedio4 tween" style="justify-content:flex-end;">
-          <video controls autoplay class="vedio4 img-fluid w-75 h-75" loop style="background: none;"
-            src="vedio\medi-yoga-1.mp4" type="video/mp4"></video>
-        </div>
+    <div class="row mt-3 justify-content-between align-items-center" style="overflow: hidden;">
+      <h2 class="text-white">Types of Aerobic Meditation</h2>
+      <p>Aerobic meditation encompasses various types that combine mindful movement with aerobic exercise. Here are a
+        few popular forms of aerobic meditation:</p>
+      <div class="col-md-6">
+        <h3 class="text-warning">1)Running Meditation:</h3>
+        <p>Running meditation involves incorporating mindfulness techniques while running. It focuses on synchronizing
+          the breath, maintaining awareness of the body's sensations, and staying present in the moment during the run.
+          Runners can observe their footsteps, the rhythm of their breath, and the surrounding environment to enhance
+          their mindful experience.</p>
       </div>
-      <h2 class="h2 mt-5 anime">Types of Aerobic Meditation</h2>
-      <p class="anime">Aerobic meditation encompasses various types that combine mindful movement with aerobic exercise. Here are
-        a few popular forms of aerobic meditation:</p>
-      <div class="row pt-2 mt-3 align-items-center justify-content-between">
-        <div class="anim4 col-md-8">
-          <h3 data-text="">1)Running Meditation:</h3>
-          <p>Running meditation involves incorporating mindfulness techniques while running. It focuses on
-            synchronizing
-            the breath, maintaining awareness of the body's sensations, and staying present in the moment during the
-            run. Runners can observe their footsteps, the rhythm of their breath, and the surrounding environment to
-            enhance their mindful experience.</p>
-        </div>
-        <div class="col-md-4">
-          <video controls autoplay class="vedio4 img-fluid w-75 h-75" loop style="background: none;"
-            src="vedio\medi-yoga-2.mp4" type="video/mp4"></video>
-        </div>
-      </div>
-      <div class="row pt-2 mt-3 align-items-center justify-content-between">
-        <div class="col-md-4">
-          <video controls autoplay class="vedio4 img-fluid w-75 h-75" loop style="background: none;"
-            src="vedio\medi-yoga-3.mp4" type="video/mp4"></video>
-        </div>
-        <div class="anim4 col-md-8">
-          <h3 data-text="">2)Yoga or Tai Chi-Based Aerobic Meditation:</h3>
-          <p>Yoga and Tai Chi are practices that combine physical movement, breath control, and mindfulness. These
-            mind-body disciplines often involve slow, controlled movements that build strength, flexibility, and
-            balance. By emphasizing breath awareness and concentration on each movement, practitioners can achieve a
-            meditative state while engaging in the aerobic aspects of these practices.</p>
-        </div>
-        
-      </div>
-      <div class="row pt-2 mt-3 align-items-center justify-content-between">
-        <div class="anim4 col-md-8">
-          <h3 data-text="Dance Meditation">3)Dance Meditation:</h3>
-          <p>Dance meditation involves using dance as a means to connect with oneself and the present moment. It
-            encourages free movement and expression while maintaining mindful awareness of the body's sensations,
-            emotions, and the music. Dance meditation can be done individually or in group settings, allowing
-            participants to experience a sense of liberation, joy, and self-discovery.</p>
-        </div>
-        <div class="col-md-4">
-          <video controls autoplay="true" class="vedio4 img-fluid w-75 h-75" loop style="background: none;"
-            src="vedio\medi-yoga-4.mp4" type="video/mp4"></video>
-        </div>
+      <div class="col-md-5"><video src="vedio\medi-yoga-2.mp4" autoplay="'true" loop class="img-fluid vedio4" controls
+          class="vedio4"></video></div>
+    </div>
+    <div class="row mt-3 justify-content-between align-items-center">
+      <div class="col-md-5"><video src="vedio\medi-yoga-3.mp4" autoplay="'true" loop class="img-fluid vedio4" controls
+          class="vedio4"></video></div>
+      <div class="col-md-6">
+        <h3 class="text-warning">2)Yoga or Tai Chi-Based Aerobic Meditation:</h3>
+        <p>Yoga and Tai Chi are practices that combine physical movement, breath control, and mindfulness. These
+          mind-body disciplines often involve slow, controlled movements that build strength, flexibility, and balance.
+          By emphasizing breath awareness and concentration on each movement, practitioners can achieve a meditative
+          state while engaging in the aerobic aspects of these practices.</p>
       </div>
     </div>
-    <script>
-      ScrollReveal({
-        reset:true,
-        distance:'100px',
-        duration:2500,
-        delay:400
-      });
-      ScrollReveal().reveal('.anim4',{delay:300,origin:'bottom'});
-      ScrollReveal().reveal('.vedio4',{delay:300,origin:'top'});
-      ScrollReveal().reveal('.anime',{delay:300,origin:'top'});
-      ScrollReveal().reveal('#btn-anime',{delay:150,origin:'right'});
-      ScrollReveal().reveal('#tags',{delay:150,origin:'left'});
-    </script>
+    <div class="row mt-3 justify-content-center align-items-center">
+      <div class="col-md-6">
+        <h3 class="text-warning">3)Dance Meditation:</h3>
+        <p>Dance meditation involves using dance as a means to connect with oneself and the present moment. It
+          encourages free movement and expression while maintaining mindful awareness of the body's sensations,
+          emotions, and the music. Dance meditation can be done individually or in group settings, allowing participants
+          to experience a sense of liberation, joy, and self-discovery.</p>
+      </div>
+      <div class="col-md-5"><video src="vedio\medi-yoga-4.mp4" autoplay="'true" loop class="img-fluid vedio4" controls
+          class="vedio4"></video></div>
+    </div>
+  </div>
+<h1 class="anim-text" data-fill-text="Helvig cas study">Helvig cas study</h1>
+  <script>
+    $(window).on("load", function () {
+      $("#load-wrapper").fadeOut("slow");
+    });
+  </script>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: "100px",
+      duration: 2500,
+      delay: 400,
+    });
+    ScrollReveal().reveal(".anim4", { delay: 300, origin: "bottom" });
+    ScrollReveal().reveal(".vedio4", { delay: 300, origin: "bottom" });
+    ScrollReveal().reveal(".anime", { delay: 300, origin: "top" });
+    ScrollReveal().reveal("#btn-anime", { delay: 150, origin: "bottom" });
+    ScrollReveal().reveal("#tags", { delay: 150, origin: "bottom" });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#show-more-icon1").click(function () {
+        $(this).hide();
+        $("#show-more-icon2").show();
+        $("#show-more-2").toggle("slow");
+      })
+    })
+    $(document).ready(function () {
+      $("#show-more-icon2").click(function () {
+        $(this).hide();
+        $("#show-more-icon1").show();
+        $("#show-more-2").toggle("slow");
+      })
+    })
+  </script>
 </body>
 
 </html>
+<!-- 
+  <div class="row">
+        <div class="col-md-6 col-sm-9">
+          <h1>Search about our professional courses and books here</h1>
+          <form action="" class="d-flex">
+            <input id="tags" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button id="btn-anime" class="btn btn-outline-success mx-2 btn-bg" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+ -->
