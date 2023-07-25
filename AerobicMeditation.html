@@ -25,6 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
   <link rel="shortcut icon" href="Images\favicon-Logo.png" type="image/x-icon" />
   <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="Css\carousel.css">
 </head>
 <style></style>
 
@@ -125,69 +126,107 @@
       </div>
     </div>
   </nav>
-  <div id="carouselExampleIndicators" class="carousel slide d-sm-none d-dm-block d-lg-block justify-content-center align-items-center"data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    
-    <div class="carousel-inner text-white d-flex">
-      <div class="carousel-item active">
-        <div class="container">
-          <div class="row">
-            <div style="position: absolute;" class="col-md-12">
-              <h1 class="anim-text" data-fill-text="Helvig cas study">Helvig cas study</h1>
-            </div>
-            <div style="position: relative;" class="col-md-5">
-              <img class="anim-img" src="Images\Aero-exercise.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row">
-            <div style="position: absolute;" class="col-md-12">
-              <h1 class="anim-text" data-fill-text="Helvig cas study">Helvig cas study</h1>
-            </div>
-            <div style="position: relative;" class="col-md-5">
-              <img class="anim-img" src="Images\Aero-exercise.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row">
-            <div style="position: absolute;" class="col-md-12">
-              <h1 class="anim-text" data-fill-text="Helvig cas study">Helvig cas study</h1>
-            </div>
-            <div style="position: relative;" class="col-md-5">
-              <img class="anim-img" src="Images\Aero-exercise.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
+  <!-- Section one -->
+  <div class="container-fluid bg-dark d-sm-none d-md-block index">
+    <div id="C-C" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
+        data-bs-pasue="fasle">
+        <div class="carousel-indicators">
+            <input style="width: 20px;height: 15px;background-color: black;" type="radio" type="button"
+                data-bs-target="#C-C" data-bs-slide-to="0" class="active">
+            <input style="width: 20px;height: 15px;background-color: black;" type="radio" type="button"
+                data-bs-target="#C-C" data-bs-slide-to="1">
+            <input style="width: 20px;height: 15px;background-color: black;" type="radio" type="button"
+                data-bs-target="#C-C" data-bs-slide-to="2">
 
+        </div>
+        <div class="carousel-inner container">
+            <div class="carousel-item active">
+
+
+                <div class="container d-flex">
+                    <div class="col-md-7">
+                        <h1 data-fill-text="Aerobic-Meditation" class="fill-anim">Aerobic-Meditation</h1>
+                    </div>
+                    <div class="circle">
+                        <a href="#">Show more</a>
+                    </div>
+                    <div style="position: absolute; margin-left: 450px;" class="col-md-5">
+                        <img src="Images\Aero-exercise.jpg" alt="" style="height: 300px;" class="anim-img">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container d-flex">
+                    <div class="col-md-7">
+                        <h1 data-fill-text="Aerobic-Meditation" class="fill-anim">Aerobic-Meditation</h1>
+                    </div>
+                    <div class="circle ">
+                        <a href="#">Show more</a>
+                    </div>
+                    <div style="position: absolute; margin-left: 450px;" class="col-md-5">
+                        <img src="Images\Aero-exercise.jpg" alt="" style="height: 300px;" class="anim-img">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container d-flex">
+                    <div class="col-md-7">
+                        <h1 data-fill-text="Aerobic-Meditation" class="fill-anim">Aerobic-Meditation</h1>
+                    </div>
+                    <div class="circle ">
+                        <a href="#">Show more</a>
+                    </div>
+                    <div style="position: absolute; margin-left: 450px;" class="col-md-5">
+                        <img src="Images\Aero-exercise.jpg" alt="" style="height: 300px;" class="anim-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" data-bs-target="#C-C" data-bs-slide="next" class="carousel-control-next">
+            <i class="fa fa-arrow-right fs-1"></i>
+        </button>
+        <button data-bs-slide="prev" type="button" data-bs-target="#C-C" class="carousel-control-prev">
+            <i class="fa fa-arrow-left fs-1"></i>
+        </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-     
+</div>
+    <!-- section two -->
+    <div class="container-fluid">
+      <div class="row text-white">
+          <div class="col-md-4 sm-screen one-bg align-items-center justify-content-center">
+              <div class="hover-img d-sm-block hover-one">
+                  01
+              </div>
+              <div class="div p-5" style="position: relative;">
+                  <h3 class="two-anim one-tran" data-fill-text="Articles">Articles</h3>
+                  <p>"Balancing Body and Mind: Aerobic Meditation's Serene Fusion Unveiled."</p>
+                  <a href="#">Read Articles</a>
+              </div>
+          </div>
+
+          <div class="col-md-4 sm-screen two-bg align-items-center justify-content-center">
+              <div class="hover-img d-sm-block hover-two">
+                  02
+              </div>
+              <div class="div p-5" style="position: relative;">
+                  <h3 class="two-anim two-tran" data-fill-text="Books">Books</h3>
+                  <p>"Discover Inner Peace: The Ultimate Guide to Aerobic Meditation."</p>
+                  <a href="#">Read Articles</a>
+              </div>
+          </div>
+          <div class="col-md-4 sm-screen third-bg align-items-center justify-content-center">
+              <div class="hover-img d-sm-block hover-three">
+                  03
+              </div>
+              <div class="div p-5" style="position: relative;">
+                  <h3 class="two-anim third-tran" data-fill-text="Courses">Courses</h3>
+                  <p>"Unlock Tranquility: Journey Through Our Aerobic Meditation Course."</p>
+                  <a href="#">Read Articles</a>
+              </div>
+          </div>
+      </div>
   </div>
+    <!-- section three -->
   <div class="container">
     <div class="row text-center ">
       <h1 class="text-warning">Aerobic Meditation</h1>
