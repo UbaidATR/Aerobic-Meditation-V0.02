@@ -28,49 +28,18 @@ html {
 }
 
 /* header icon  */
-a i {
-    color: orange;
-    font-size: 1.2rem;
-}
 
-/* header icon on hover */
-a i:hover {
-    color: white;
-}
 
 /* display flex on small devices */
 .first-nav .navbar-nav {
     display: flex !important;
 }
 
-@media (min-width: 500px) {
-    #icon-nav {
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 1rem;
-    }
 
-    #icon-nav i {
-        margin-left: 2rem;
 
-    }
-}
-
-/* second header font  */
-.x-hover {
-    font-family: 'Lilita One', sans-serif;
-    font-size: x-large;
-}
-
-.y-hover {
-    font-family: 'Lilita One', sans-serif;
-    font-size: x-large;
-}
 
 /* chnage the color on hover of the content navbar */
-#hover:hover {
-    color: white;
-}
+
 
 /* animation on hover  */
 .x-hover::after {
@@ -120,5 +89,31 @@ form .btn-bg {
 .container p {
     color: white;
 }
+.two-anim {
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-transform: capitalize;
+    font-size: 60px;
+    animation-name: two-anim;
+    animation-duration: 3s;
+    animation-delay: 0s;
 
+}
 
+.two-anim::before {
+    content: attr(data-fill-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100;
+    color: white;
+    white-space: nowrap;
+    transition: 3s;
+    overflow: hidden;
+}
+
+.two-anim:hover::before {
+    width: 100%;
+}

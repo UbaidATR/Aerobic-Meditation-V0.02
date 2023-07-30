@@ -34,98 +34,66 @@
     <i id="loading" class="fa fa-spin fa-spinner"></i>
   </div>
   <!-- nav bar -->
-  <nav id="sticky-nav" style="background-color: rgb(143, 140, 140)" class="navbar p-3 navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
     <div class="container-fluid">
-      <a class="logo d-md-none d-sm-block" href="#"><img src="Images\favicon-Logo-2.png" alt="" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentl"
-        aria-controls="navbarSupportedContentl" aria-expanded="false" aria-label="Toggle navigation">
-        <i id="arrow-down" class="fa fa-arrow-down text-warning fs-1"></i><i id="arrow-up"
-          class="text-warning fs-1 fa fa-arrow-up" style="display: none"></i>
+      <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="#">Ubaid x ATR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContentl">
-        <div class="div">
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <div class="brand">
+          <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="#">Ubaid x ATR</a>
+        </div>
+        <form class="d-md-flex ">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item hover">
-              <a class="x-hover nav-link mx-md-4" href="#">Home</a>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover active" aria-current="page" href="#">Home</a>
             </li>
-            <hr class="dropdown-divider">
-            <li class="nav-item dropdown">
-              <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Courses
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Soulful Pulse</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Meditative Motion:</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#">ZenFlow</a></li>
-              </ul>
-            </li>
-            <hr class="dropdown-divider">
-            <li class="nav-item dropdown">
-              <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+
+            <li class="mx-4 nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Articles
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Boosting Mental and physical Health</a></li>
+                <li><a class="dropdown-item" href="#">Unleashing your full potential</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">
-                    Boosting Mental and Physical Health</a>
+                  <hr class="dropdown-divider">
                 </li>
-                <li>
-                  <a class="dropdown-item" href="#">Unleashing Your Full Potential</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Cultivating Mind-Body Harmony</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Cultivation mind body Hormony</a></li>
               </ul>
             </li>
-            <hr class="dropdown-divider">
-            <li class="nav-item dropdown">
-              <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="mx-4 nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Books
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">The power of flow</a></li>
+                <li><a class="dropdown-item" href="#">The rythmic Path</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Aerobic Meditation</a>
+                  <hr class="dropdown-divider">
                 </li>
-                <li>
-                  <a class="dropdown-item" href="#">The Power of Flow</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">The Rhythmic Path</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#"> Mindful Motion</a></li>
+
+                <li><a class="dropdown-item" href="#">Mind-full Mtotion</a></li>
               </ul>
             </li>
-            <hr class="dropdown-divider">
-            <li class="nav-item hover">
-              <a class="x-hover nav-link mx-md-4" href="#">Feedback</a>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="courses.html">Courses</a>
+            </li>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="#">Feed-Back</a>
             </li>
           </ul>
-        </div>
+          <div class="search-icon d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </form>
 
-
-        <div class="div ">
-          <button class="btn btn-outline-warning" onclick="document.location.href=''">
-            Sign-In
-          </button>
-          <button class="btn btn-outline-warning">Sing-Up</button>
-        </div>
       </div>
-    </div>
   </nav>
   <!-- Section one -->
   <div class="container-fluid bg-dark d-sm-none d-md-block index">
@@ -222,7 +190,6 @@
         <div class="div p-5" style="position: relative;">
           <h3 class="two-anim third-tran" data-fill-text="Courses">Courses</h3>
           <p>"Unlock Tranquility: Journey Through Our Aerobic Meditation Course."</p>
-          <a href="#">Read Articles</a>
         </div>
       </div>
     </div>
@@ -295,7 +262,7 @@
           emotions, and the music. Dance meditation can be done individually or in group settings, allowing participants
           to experience a sense of liberation, joy, and self-discovery.</p>
       </div>
-      <div class="col-md-5"><video src="vedio\medi-yoga-4.mp4" autoplay="'true" loop class="img-fluid vedio4" controls
+      <div class="col-md-5"><video src="vedio\medi-yoga-3.mp4" autoplay="'true" loop class="img-fluid vedio4" controls
           class="vedio4"></video></div>
     </div>
   </div>
@@ -305,40 +272,43 @@
         <div class="col-md-12">
           <p><b class="text-dark">Copyright © [2023] [Aerobic Meditation]. All rights reserved.</b></p>
           <p style="text-align: justify;">
-            <q class="text-dark">Disclaimer: The information provided on this website is for general informational purposes only and
+            <q class="text-dark">Disclaimer: The information provided on this website is for general informational
+              purposes only and
               should
               not be construed as medical advice or a substitute for professional healthcare. Always seek the advice of
               your physician or qualified healthcare provider with any questions or concerns you may have regarding your
               health or a medical condition.</q>
           </p>
         </div>
-        <h3>Stay Connected:</h3>
-            <p class="text-dark">Subscribe to our newsletter for the latest updates, exclusive offers, and mindfulness tips.</p>
-        <div style="text-align: left;" class="col-md-12 d-flex justify-content-between align-items-center">
-          <div class="div-x">
-            <a href="#" style="list-style-type: none; text-decoration: none;">Terms of Service | Privacy Policy | Disclaimer</a>
-          </div>
-          <div class="s-dic ">
-            <b class="text-warning">Contact us:</b><br>
-            <a href="mailto:ubaidatr66@gmail.com"><i class="fa-solid fa-envelope text-dark"></i> </a> &nbsp; &nbsp; &nbsp;
-            <a href="https://wa.me/03165923893" target="_blank"><i class="fa-brands fa-whatsapp text-dark"></i></a>
-            &nbsp;&nbsp; &nbsp;
-            <i class="fa-brands fa-facebook text-dark"></i> &nbsp;&nbsp; &nbsp;
-          </div>
-          <div class="s-disc">
-            <b class="text-warning">connect with us:</b><br>
-            <a href="mailto:ubaidatr66@gmail.com"><i class="fa-solid fa-envelope text-dark"></i> </a> &nbsp; &nbsp; &nbsp;
-            <a href="https://wa.me/03165923893" target="_blank"><i class="fa-brands fa-whatsapp text-dark"></i></a>
-            &nbsp;&nbsp; &nbsp;
-            <i class="fa-brands fa-facebook text-dark"></i> &nbsp;&nbsp; &nbsp;
-          </div>
+        <b>Stay Connected</b>
+        <p class="text-dark">Subscribe to our newsletter for the latest updates, exclusive offers, and mindfulness tips.
+        </p>
+      </div>
+    </div>
+    <div class="container pb-0 mb-0">
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <ul style="width: max-content;">
+            <li style="list-style-type: none;"><a href="#" style="list-style-type: none; text-decoration: none;">Terms of Service</a></li>
+            <li style="list-style-type: none;"><a href="#" style="list-style-type: none; text-decoration: none;">Policy</a></li>
+            <li style="list-style-type: none;"><a href="#" style="list-style-type: none; text-decoration: none;">All rights reserved</a></li>
+          </ul>
+  
         </div>
-        <div class="row">
-          <div class="col-12">
-            
-            
-          </div>
+        <div class="col-md-4">
+          <b class="text-warning">Contact us:</b><br>
+          <a href="mailto:ubaidatr66@gmail.com"><i class="fa-solid fa-envelope text-dark"></i></a> &nbsp; &nbsp; &nbsp;
+          <a href="https://wa.me/03165923893" target="_blank"><i class="fa-brands fa-whatsapp text-dark"></i></a>
+          &nbsp;&nbsp; &nbsp;
+          <i class="fa-brands fa-facebook text-dark"></i> &nbsp;&nbsp; &nbsp;
         </div>
+        <div class="col-md-4">
+          <b class="text-warning">Contact us:</b><br>
+          <a href="#" target="_blank"><i class="fa-brands fa-twitter text-dark"></i></a> &nbsp; &nbsp; &nbsp;
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram text-dark"></i></a>
+          &nbsp;&nbsp; &nbsp;
+          <a href="#" target="_blank"><i class="fa-brands fa-tiktok text-dark"></i></a> &nbsp;&nbsp; &nbsp;
+        </div> 
       </div>
     </div>
   </div>

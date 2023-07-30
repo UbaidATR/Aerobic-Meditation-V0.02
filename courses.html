@@ -20,127 +20,445 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Css\home.css">
+    <link rel="stylesheet" href="Css\courses.css">
 </head>
 
-<body style="height: 100vh;width: 100vw;background-color: yellow;">
+<body>
     <!-- nav bar -->
-    <nav id="sticky-nav" style="background-color: rgb(143, 140, 140)" class="navbar p-3 navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
         <div class="container-fluid">
-            <a class="logo d-md-none d-sm-block" href="#"><img src="Images\favicon-Logo-2.png" alt="" /></a>
+            <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="#">Ubaid x ATR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContentl" aria-controls="navbarSupportedContentl" aria-expanded="false"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <i id="arrow-down" class="fa fa-arrow-down text-warning fs-1"></i><i id="arrow-up"
-                    class="text-warning fs-1 fa fa-arrow-up" style="display: none"></i>
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContentl">
-                <div class="div">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="brand">
+                    <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="#">Ubaid x ATR</a>
+                </div>
+                <form class="d-md-flex ">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item hover">
-                            <a class="x-hover nav-link mx-md-4" href="AerobicMeditation.html">Home</a>
+                        <li class="mx-4 nav-item">
+                            <a class="nav-link x-hover active" aria-current="page"
+                                href="AerobicMeditation.html">Home</a>
                         </li>
-                        <hr class="dropdown-divider">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Courses
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Soulful Pulse</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Meditative Motion:</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li><a class="dropdown-item" href="#">ZenFlow</a></li>
-                            </ul>
-                        </li>
-                        <hr class="dropdown-divider">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
+
+                        <li class="mx-4 nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Articles
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Boosting Mental and physical Health</a></li>
+                                <li><a class="dropdown-item" href="#">Unleashing your full potential</a></li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
-                                        Boosting Mental and Physical Health</a>
+                                    <hr class="dropdown-divider">
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Unleashing Your Full Potential</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Cultivating Mind-Body Harmony</a>
-                                </li>
+                                <li><a class="dropdown-item" href="#">Cultivation mind body Hormony</a></li>
                             </ul>
                         </li>
-                        <hr class="dropdown-divider">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="mx-4 nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Books
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">The power of flow</a></li>
+                                <li><a class="dropdown-item" href="#">The rythmic Path</a></li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Aerobic Meditation</a>
+                                    <hr class="dropdown-divider">
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">The Power of Flow</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">The Rhythmic Path</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li><a class="dropdown-item" href="#"> Mindful Motion</a></li>
+
+                                <li><a class="dropdown-item" href="#">Mind-full Mtotion</a></li>
                             </ul>
                         </li>
-                        <hr class="dropdown-divider">
-                        <li class="nav-item hover">
-                            <a class="x-hover nav-link mx-md-4" href="#">Feedback</a>
+
+                        <li class="mx-4 nav-item">
+                            <a class="nav-link x-hover" href="courses.html">Courses</a>
+                        </li>
+                        <li class="mx-4 nav-item">
+                            <a class="nav-link x-hover" href="#">Feed-Back</a>
                         </li>
                     </ul>
-                </div>
+                    <div class="search-icon d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
+                </form>
 
-
-                <div class="div ">
-                    <button class="btn btn-outline-warning" onclick="document.location.href=''">
-                        Sign-In
-                    </button>
-                    <button class="btn btn-outline-warning">Sing-Up</button>
-                </div>
             </div>
-        </div>
     </nav>
-    <!-- section one -->
-    <div class="container-fluid bg-dark">
+    <!-- section one content-->
+    <div class="container-fluid bg-dark d-flex justify-content-center align-items-center  c-sm">
         <div class="container">
             <div class="row justify-content-between">
-                <div style="box-shadow: 0px 0px 10px orange;" class="col-md-3 mt-4">
-                    Soulful-Pulse
+                <div
+                    class="col-md-3 pt-1  bd-one d-flex align-items-center pb-2 justify-content-center  text-white mt-4">
+                    <div class="div">
+                        <b>Soulful-pulse</b>
+                        <p>
+                            <q>
+                                <i>
+                                    Soulful Pulse: A captivating rhythm that resonates deep within, touching hearts and
+                                    igniting
+                                    emotions with its soul-stirring melodies.
+                                </i>
+                            </q>
+                        </p>
+                        <p>Join our soulful course, awaken your inner harmony, and find profound inspiration in music's
+                            embrace.</p>
+                        <div class="d-flex justify-content-between">
+                            <button id="soulful" class="btn btn-outline-warning">Overview <i class="fa fa-fingerprint"></i></button>
+                            <button class="btn btn-outline-warning" onclick="document.location.href='eg.html'">Join Course</button>
+                        </div>
+                    </div>
                 </div>
-                <div style="box-shadow: 0px 0px 10px orange;" class="col-md-3 mt-4">
-                    bsdk
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint nulla nemo expedita hic aut
-                        eum atque molestiae, qui iusto dolore optio veniam nihil numquam at obcaecati voluptas deserunt
-                        impedit!
-                        Voluptate alias, minus corrupti error debitis magnam, velit cum maxime ab ipsam expedita hic rem
-                        voluptas nemo nobis culpa quaerat impedit animi aliquam eius, fugit suscipit? Itaque cupiditate
-                        enim at?</p>
+                <div
+                    class="col-md-3 pt-1  bd-one d-flex align-items-center pb-2 justify-content-center  text-white mt-4">
+                    <div class="div">
+                        <b>Meditative Motion</b>
+                        <p>
+                            <q>
+                                <i>
+                                    Experience serenity in motion. Explore mindful movement and find inner peace through
+                                    our meditative motion course.
+                                </i>
+                            </q>
+                        </p>
+                        <p>Explore the Meditative Motion course, find inner calm through mindful movement and embrace
+                            tranquility in each breath.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <button id="medition" class="btn btn-outline-warning">Overview  <i class="fa fa-fingerprint"></i></button>
+                            <button class="btn btn-outline-warning">Join Course</button>
+                        </div>
+                    </div>
                 </div>
-                <div style="box-shadow: 0px 0px 10px orange;" class="col-md-3 mt-4">
-                    maderchod
+                <div
+                    class="col-md-3 pt-1  bd-one d-flex align-items-center pb-2 justify-content-center  text-white mt-4">
+                    <div class="div">
+                        <b>Feldenkrais Method</b>
+                        <p style="text-align: justify;">
+                            <q>
+                                <i>
+                                    Unlock Your Body's Wisdom: Experience Mindful Movement, Improve Posture, and
+                                    Discover Effortless Ease with Feldenkrais Method..
+                                </i>
+                            </q>
+                        </p>
+                        <p> Embark on a Journey of Self-Discovery and Transformative Movement with the Feldenkrais
+                            Method - A Path to Well-Being</p>
+                        <div class="d-flex justify-content-between">
+                            <button id="F-M" class="btn btn-outline-warning">Overview <i class="fa fa-fingerprint"></i></button>
+                            <button class="btn btn-outline-warning">Join Course</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Overveiew on Souolful-Pulse -->
+    <div class="container-fluid bg-dark">
+        <hr class="dropdown-divider">
+        <div class="container container-one">
+            <div class="container C-hover-one d-flex justify-content-center align-items-center">
+                <div class="hover-img hover-one text-white">
+                    Soulful-pulse
+                </div>
+                <div class="row text-white">
+                    <h2 style="font-family:'Times New Roman', Times, serif; color: yellow;">Soulful-pulse</h2>
+                    <p style="line-height: 2rem;">
+                        "Soulful Pulse," a rhythmic journey that resonates with emotions, ignites passion, and connects
+                        hearts through its captivating beats. <mark style="background-color: yellow;">
+                            Let the music guide you to a deeper soul experience.</mark>
+                    </p>
+                    <b class="fs-3">Types Of Soulful pulse</b>
+                    <ol class="">
+                        <li>Soulful Pulse of Dance</li>
+                        <li>Soulful Pulse of Nature</li>
+                        <li>Soulful Pulse of Art</li>
+                        <li>Soulful Pulse of Relationships</li>
+                        <li>Soulful Pulse of Words</li>
+                        <li>Soulful Pulse of Spirituality</li>
+                    </ol class="">
+                    <p><b class="fs-4 text-info">Does and Don't of soulful pulse</b></p>
+                    <b class="text-warning">Do's of Soulful Pulse Activities:</b>
+                    <ul class="">
+                        <li>Do Embrace Emotions: Allow yourself to feel and express emotions freely through the chosen
+                            soulful pulse activity.</li>
+                        <li>Do Stay Present: Be fully present in the moment while engaging in the activity, focusing on
+                            the
+                            experience at hand.</li>
+                        <li>Do Find Meaning: Seek out soulful pulse activities that resonate with your values and bring
+                            a
+                            sense of purpose or connection.</li>
+                        <li>Do Explore Creativity: Encourage creativity and self-expression within the chosen activity
+                            to
+                            enhance its soulful impact.</li>
+                        <li>Do Be Open-Minded: Be open to trying different types of soulful pulse activities to discover
+                            what brings you the most joy and fulfillment.</li>
+                    </ul>
+                    <p><i class="text-success">And while "don'ts" in the traditional sense may not directly apply, here
+                            are
+                            some considerations
+                            to keep in mind:</i></p>
+                    <b class="text-warning">Considerations for Soulful Pulse Activities:</b>
+                    <ul>
+                        <li>Don't Force It: <br> If a particular soulful pulse activity isn't resonating with you, don't
+                            feel
+                            obligated to continue. Explore other options that align better with your preferences.
+                        </li>
+                        <li>
+                            Don't Judge Yourself: <br>
+                            Let go of self-criticism and judgment during these activities. They are meant to be a
+                            personal
+                            and authentic experience.
+                        </li>
+                        <li>
+                            Don't Rush:<br>
+                            Avoid rushing through soulful pulse activities. Take the time to savor and fully immerse
+                            yourself in the experience.
+                        </li>
+                        <li>
+                            Don't Compare: <br>
+                            Soulful pulse activities are unique to each individual. Avoid comparing your experiences
+                            with
+                            others and focus on what brings you joy.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Overveiew on Meditative Motion -->
+    <div class="container-fluid bg-dark">
+
+        <div class="container container-two">
+            <div class="container C-hover-one d-flex justify-content-center align-items-center">
+                <div class="hover-img hover-one text-white">
+                    Meditative Motion
+                </div>
+                <div class="row text-white">
+                    <h2 style="font-family:'Times New Roman', Times, serif; color: yellow;">Meditative Motion</h2>
+                    <p style="line-height: 2rem;">
+                        Harmonious practice fusing mindfulness and gentle movements for <mark
+                            style="background-color: yellow;">inner peace, relaxation, and well-being</mark> . Breath
+                        and body become one.
+                    </p>
+                    <ol class="">
+                        <li>Tai Chi:</li>
+                        <li>Qigong</li>
+                        <li>Pilates:</li>
+                        <li>Walking Meditation</li>
+                    </ol class="">
+                    <p class="text-success">Certainly! Here are some general "do's and don'ts" to keep in mind while
+                        engaging in meditative motion practices:</p>
+                    <b class="text-warning">Do's of Meditative Motion:</b>
+                    <ul class="">
+                        <li>Do Breathe Mindfully: Pay attention to your breath during the practice, inhaling deeply and
+                            exhaling slowly to enhance relaxation.</li>
+                        <li>Do Stay Present: Focus on the present moment, letting go of distractions and thoughts about
+                            the
+                            past or future.</li>
+                        <li>Do Listen to Your Body: Be mindful of your body's limitations and avoid pushing yourself
+                            into
+                            uncomfortable or painful positions.</li>
+                        <li>Do Practice Regularly: Consistency is key. Engage in meditative motion regularly to
+                            experience
+                            its full benefits and effects.</li>
+                    </ul>
+                    <p><i class="text-success">And while "don'ts" in the traditional sense may not directly apply, here
+                            are
+                            some considerations
+                            to keep in mind:</i></p>
+                    <b class="text-warning">Don'ts of Meditative Motion:</b>
+                    <ul>
+                        <li>
+                            Don't Rush: <br>
+                            Meditative motion is about slowing down and being present. Avoid rushing through the
+                            practice.
+                        </li>
+                        <li>
+                            Don't Compare Yourself: <br>
+                            Everyone's meditative motion journey is unique. Avoid comparing your progress to others and
+                            focus on your own experience.
+                        </li>
+                        <li>
+                            Don't Force Yourself:<br>
+                            Avoid straining or forcing your body into positions that feel uncomfortable or painful.
+                        </li>
+                        <li>
+                            Don't Get Discouraged:<br>
+                            Like any practice, meditative motion takes time to develop. Be patient with yourself and
+                            embrace the process.
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Overveiew on Feldenkrais Method -->
+    <div class="container-fluid bg-dark">
+
+        <div class="container container-three">
+            <div class="container C-hover-one d-flex justify-content-center align-items-center">
+                <div class="hover-img hover-one text-white">
+                    Feldenkrais Method
+                </div>
+                <div class="row text-white">
+                    <h2 style="font-family:'Times New Roman', Times, serif; color: yellow;">Feldenkrais Method</h2>
+                    <p style="line-height: 2rem;">
+                        The Feldenkrais Method is a mind-body approach to <mark style="background-color: yellow;"> movement and self-awareness.</mark> Through gentle exercises, it aims to improve flexibility, posture, and overall well-being.
+                    </p>
+                    <b>Types of Feldenkrais Method</b>
+                    <ol class="">
+                        <li>Awareness Through Movement (ATM)</li>
+                        <li>Functional Integration (FI)</li>
+                    </ol class="">
+                    <p class="text-success">Certainly! Here are some general "do's and don'ts" to keep in mind while
+                        engaging in meditative motion practices:</p>
+                    <b class="text-warning">Dos for Feldenkrais Method:</b>
+                    <ul class="">
+                        <li>
+                            Practice Mindful Awareness: <br>
+                            Stay present and attentive to your body and movement during Feldenkrais lessons.
+                        </li>
+                        <li>
+                            Start Slowly:<br>
+                            Begin with gentle, slow movements to avoid strain or injury.
+                        </li>
+                        <li>
+                            Listen to Your Body: <br>
+                            Pay attention to any discomfort or pain and adjust your movements accordingly.
+                        </li>
+                        <li>
+                            Be Patient:<br>
+                            Progress may be gradual, so give yourself time to absorb and integrate the learning.
+                        </li>
+                    </ul>
+                    <p><i class="text-success">Don'ts for Feldenkrais Method:</i></p>
+                    <b class="text-warning">Don'ts of Meditative Motion:</b>
+                    <ul>
+                        <li>
+                            Don't Force Movements: <br>
+                            Avoid pushing yourself into uncomfortable or painful positions.
+                        </li>
+                        <li>
+                            Don't Rush:<br>
+                            Take your time to explore each movement with awareness and precision.
+                        </li>
+                        <li>
+                            Don't Compare Yourself to Others: <br>
+                            Each person's learning process is unique; focus on your own experience
+                        </li>
+                        <li>
+                            Don't Overexert:<br>
+                            Avoid excessive or intense movements that could lead to strain or injury.\
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section three footer -->
+    <div class="container-fluid p-2 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><b class="text-dark">Copyright © [2023] [Aerobic Meditation]. All rights reserved.</b></p>
+                    <p style="text-align: justify;">
+                        <q class="text-dark">Disclaimer: The information provided on this website is for general
+                            informational
+                            purposes only and
+                            should
+                            not be construed as medical advice or a substitute for professional healthcare. Always seek
+                            the advice of
+                            your physician or qualified healthcare provider with any questions or concerns you may have
+                            regarding your
+                            health or a medical condition.</q>
+                    </p>
+                </div>
+                <b>Stay Connected</b>
+                <p class="text-dark">Subscribe to our newsletter for the latest updates, exclusive offers, and
+                    mindfulness tips.
+                </p>
+            </div>
+        </div>
+        <div class="container pb-0 mb-0">
+            <div class="row d-flex justify-content-between">
+                <div class="col-4">
+                    <ul style="width: max-content;">
+                        <li style="list-style-type: none;"><a href="#"
+                                style="list-style-type: none; text-decoration: none;">Terms of Service</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="list-style-type: none; text-decoration: none;">Policy</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="list-style-type: none; text-decoration: none;">All rights reserved</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-4">
+                    <b class="text-warning">Contact us:</b><br>
+                    <a href="mailto:ubaidatr66@gmail.com"><i class="fa-solid fa-envelope text-dark"></i></a> &nbsp;
+                    &nbsp; &nbsp;
+                    <a href="https://wa.me/03165923893" target="_blank"><i
+                            class="fa-brands fa-whatsapp text-dark"></i></a>
+                    &nbsp;&nbsp; &nbsp;
+                    <i class="fa-brands fa-facebook text-dark"></i> &nbsp;&nbsp; &nbsp;
+                </div>
+                <div class="col-4">
+                    <b class="text-warning">Contact us:</b><br>
+                    <a href="#" target="_blank"><i class="fa-brands fa-twitter text-dark"></i></a> &nbsp; &nbsp; &nbsp;
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram text-dark"></i></a>
+                    &nbsp;&nbsp; &nbsp;
+                    <a href="#" target="_blank"><i class="fa-brands fa-tiktok text-dark"></i></a> &nbsp;&nbsp; &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#meditate").click(function () {
+                $(".container-two").hide();
+                $(".container-one").show();
+            });
+
+            $(".arrowdown").click(function () {
+                $(this).hide();
+                $(".arrowup").show();
+                $("#pop-types").slideDown();
+            });
+            $(".arrowup").click(function () {
+                $(this).hide();
+                $(".arrowdown").show();
+                $("#pop-types").slideUp();
+            })
+        })
+    </script>
+    <script>  
+        $(document).ready(function () {
+            $("#soulful").click(function () {
+                $(".container-one").fadeToggle();
+                $(".container-two").hide();
+                $(".container-three").hide();
+            });
+            $("#medition").click(function () {
+                $(".container-two").fadeToggle();
+                $(".container-one").hide();
+                $(".container-three").hide();
+            });
+            
+            $("#F-M").click(function () {
+                $(".container-two").hide();
+                $(".container-one").hide();
+                $(".container-three").fadeToggle();
+            })
+        })
+    </script>
+
 </body>
 
 </html>

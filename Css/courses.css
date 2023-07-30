@@ -1,0 +1,130 @@
+.x-hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: white;
+    width: 0;
+    background-color: rgb(0, 101, 209);
+    transition: all 1s;
+}
+
+/* hover-after */
+.x-hover:hover::after {
+    width: 100%;
+    background: white;
+}
+.bd-one{
+    border-radius: 15px;
+}
+.c-sm{
+    height: 100vh;
+    
+}
+.bd-one{
+    box-shadow: 0px 0px 15px orange;
+
+}
+.x-hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: white;
+    width: 0;
+    background-color: black;
+    transition: all 1s;
+}
+
+/* hover-after */
+.x-hover:hover::after {
+    width: 100%;
+    background: white;
+}
+
+.bd-one:hover{
+    box-shadow: 0px 0px 50px pink;
+    transform: translate(0%,-20%);
+    transition-property: all;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="c-sm"] {
+        height: 50vh;
+        overflow: scroll;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bd-one{
+        box-shadow: 0px 0px 15px orange;
+    }
+    .bd-one:hover{
+        box-shadow: 0px 0px 50px pink;
+        transform: translate(0%,-5%);
+        transition-property: all;
+        transition: 0.5s;
+    }
+    .c-video{
+        flex-direction: column-reverse;
+    }
+
+    .c-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ft{
+        margin-top:0%;
+    }
+}
+.container-one{
+    display: none;
+}
+.container-two{
+    display: none;
+}
+
+/* .arrowup{
+    display: none;
+}
+#pop-types{
+    display: none;
+    transition: 2s;
+} */
+.c-video{
+    justify-content: end;
+    display: flex;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.hover-img {
+    opacity: 0%;
+    position: absolute;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    text-align: center;
+    -webkit-text-stroke-color: white;
+    transform: translate(-20%, 0%);
+}
+.C-hover-one:hover>.hover-img {
+    opacity:50%;
+    display: block;
+    transition: 2s;
+    transform: translate(0%, 0);
+}
+.container-three{
+    display: none;
+}
+.ft{
+    background-color: rgba(240, 248, 255, 0.418);
+    border: 1px solid rgba(0, 0, 0, 0.268);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.c-form{
+    height: auto;
+}
