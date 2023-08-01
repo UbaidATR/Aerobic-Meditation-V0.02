@@ -30,6 +30,11 @@
   .error {
     color: red;
   }
+
+  body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(221, 105, 47, 0.9780287114845938) 0%, rgba(121, 9, 83, 0.9500175070028011) 55%);
+  }
 </style>
 
 <body>
@@ -51,41 +56,18 @@
               <a class="nav-link x-hover active" aria-current="page" href="AerobicMeditation.html">Home</a>
             </li>
 
-            <li class="mx-4 nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Articles
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Boosting Mental and physical Health</a></li>
-                <li><a class="dropdown-item" href="#">Unleashing your full potential</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Cultivation mind body Hormony</a></li>
-              </ul>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="#">Aricles</a>
             </li>
-            <li class="mx-4 nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Books
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">The power of flow</a></li>
-                <li><a class="dropdown-item" href="#">The rythmic Path</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-
-                <li><a class="dropdown-item" href="#">Mind-full Mtotion</a></li>
-              </ul>
-            </li>
+          <li class="mx-4 nav-item">
+            <a class="nav-link x-hover" href="books.html">Books</a>
+          </li>
 
             <li class="mx-4 nav-item">
               <a class="nav-link x-hover" href="courses.html">Courses</a>
             </li>
             <li class="mx-4 nav-item">
-              <a class="nav-link x-hover" href="#">Feed-Back</a>
+              <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
             </li>
           </ul>
           <div class="search-icon d-flex">
@@ -126,52 +108,94 @@
                   <input type="password" class="w-100 p-2" name="fpass" id="fpass" placeholder="Enter password">
                 </div>
                 <div class="col-md-6">
-                  <label for="spass">Phone number</label><br>
-                  <input type="password" class="w-100 p-2" name="spass" id="spass" placeholder="phone number">
+                  <label for="spass">Re-Enter password</label><br>
+                  <input type="password" class="w-100 p-2" name="spass" id="spass" placeholder="Re-Enter password">
                 </div>
+                <label for="birth">Enter your birthday</label>
                 <div class="row justify-content-between d-flex">
                   <div class="col-md-4">
-                    <label for="Month">Month</label><br>
-                    <select id="dmy" class="form-control" name="Month">
-                      <option value="">00</option>
-                      <option value="2">Soulful-pulse</option>
-                      <option value="3">Meditative Motion</option>
-                      <option value="4">Feldenkrais Method</option>
-                    </select>
+                    <input class="nume" type="text" class="w-100 p-2" name="date" id="date" placeholder="Date">
                   </div>
                   <div class="col-md-4">
-                    <label for="Date">Date</label><br>
-                    <select id="dmy" class="form-control" name="Date">
-                      <option value="">00</option>
-                      <option value="2">Soulful-pulse</option>
-                      <option value="3">Meditative Motion</option>
-                      <option value="4">Feldenkrais Method</option>
-                    </select>
+                    <input class="nume" type="text" class="w-100 p-2" name="month" id="month" placeholder="month">
                   </div>
                   <div class="col-md-4">
-                    <label for="Year">year</label><br>
-                    <select id="dmy" class="form-control" name="Year">
-                      <option value="">0000</option>
-                      <option value="2">Soulful-pulse</option>
-                      <option value="3">Meditative Motion</option>
-                      <option value="4">Feldenkrais Method</option>
-                    </select>
+                    <input class="nume" type="text" class="w-100 p-2" name="year" id="year" placeholder="year">
                   </div>
                 </div>
 
               </div>
               <button id="button" type="submit" class="btn btn-outline-success mt-2">Register</button>
               <br><br>
-              <p>have already an account <a href="#">login here!</a></p>
+              <p>have already an account <a href="login.html">login here!</a></p>
             </form>
-            
+
           </div>
         </div>
       </div>
     </div>
-    
+
   </div>
+  <!-- footer -->
+  <div class="container-fluid p-2 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p><b class="text-dark">Copyright © [2023] [Aerobic Meditation]. All rights reserved.</b></p>
+                <p style="text-align: justify;">
+                    <q class="text-dark">Disclaimer: The information provided on this website is for general
+                        informational
+                        purposes only and
+                        should
+                        not be construed as medical advice or a substitute for professional healthcare. Always seek
+                        the advice of
+                        your physician or qualified healthcare provider with any questions or concerns you may have
+                        regarding your
+                        health or a medical condition.</q>
+                </p>
+            </div>
+            <b>Stay Connected</b>
+            <p class="text-dark">Subscribe to our newsletter for the latest updates, exclusive offers, and
+                mindfulness tips.
+            </p>
+        </div>
+    </div>
+    <div class="container pb-0 mb-0">
+        <div class="row d-flex justify-content-between">
+            <div class="col-4">
+                <ul style="width: max-content;">
+                    <li style="list-style-type: none;"><a href="#"
+                            style="list-style-type: none; text-decoration: none;">Terms of Service</a></li>
+                    <li style="list-style-type: none;"><a href="#"
+                            style="list-style-type: none; text-decoration: none;">Policy</a></li>
+                    <li style="list-style-type: none;"><a href="#"
+                            style="list-style-type: none; text-decoration: none;">All rights reserved</a></li>
+                </ul>
+
+            </div>
+            <div class="col-4">
+                <b class="text-warning">Contact us:</b><br>
+                <a href="mailto:ubaidatr66@gmail.com"><i class="fa-solid fa-envelope text-dark"></i></a> &nbsp;
+                &nbsp; &nbsp;
+                <a href="https://wa.me/03165923893" target="_blank"><i
+                        class="fa-brands fa-whatsapp text-dark"></i></a>
+                &nbsp;&nbsp; &nbsp;
+                <i class="fa-brands fa-facebook text-dark"></i> &nbsp;&nbsp; &nbsp;
+            </div>
+            <div class="col-4">
+                <b class="text-warning">Contact us:</b><br>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter text-dark"></i></a> &nbsp; &nbsp; &nbsp;
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram text-dark"></i></a>
+                &nbsp;&nbsp; &nbsp;
+                <a href="#" target="_blank"><i class="fa-brands fa-tiktok text-dark"></i></a> &nbsp;&nbsp; &nbsp;
+            </div>
+        </div>
+    </div>
+</div>
   <script>
+    $('.nume').bind('keyup paste', function () {
+      this.value = this.value.replace(/[^0-9]/g, '');
+    });
     $(function () {
       $("form[name='registration']").validate({
         rules: {
@@ -202,11 +226,26 @@
           },
           fpass: {
             required: true,
-            minlength:8
+            minlength: 8
           },
           spass: {
             required: true,
-            equalTo:"#fpass"
+            equalTo: "#fpass"
+          },
+          date: {
+            required: true,
+            max: 31,
+            min: 1
+          },
+          month: {
+            required: true,
+            max: 12,
+            min: 1
+          },
+          year: {
+            required: true,
+            max: 2023,
+            min: 1965
           },
         },
         messages: {

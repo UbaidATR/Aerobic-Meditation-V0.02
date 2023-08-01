@@ -23,6 +23,13 @@
     <link rel="stylesheet" href="Css\courses.css">
 </head>
 <style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(221, 105, 47, 0.9780287114845938) 0%, rgba(121, 9, 83, 0.9500175070028011) 55%);
+
+    }
+
     label {
         color: black;
     }
@@ -31,9 +38,20 @@
         color: red;
     }
 
-    form {
+    .c-inp {
+        width: 100%;
+    }
+
+    .container {
+        height: 80vh;
+        align-items: center;
+    }
+
+    .form {
         border-radius: 1rem;
-        border: 1px solid rgba(27, 27, 27, 0.407);
+        border: 1px sloid black;
+        background-color: rgba(255, 255, 255, 0.196);
+
     }
 </style>
 </head>
@@ -58,41 +76,18 @@
                                 href="AerobicMeditation.html">Home</a>
                         </li>
 
-                        <li class="mx-4 nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Articles
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Boosting Mental and physical Health</a></li>
-                                <li><a class="dropdown-item" href="#">Unleashing your full potential</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Cultivation mind body Hormony</a></li>
-                            </ul>
-                        </li>
-                        <li class="mx-4 nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Books
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">The power of flow</a></li>
-                                <li><a class="dropdown-item" href="#">The rythmic Path</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-
-                                <li><a class="dropdown-item" href="#">Mind-full Mtotion</a></li>
-                            </ul>
+                        <li class="mx-4 nav-item">
+                            <a class="nav-link x-hover" href="#">Aricles</a>
+                          </li>
+                        <li class="mx-4 nav-item">
+                          <a class="nav-link x-hover" href="books.html">Books</a>
                         </li>
 
                         <li class="mx-4 nav-item">
                             <a class="nav-link x-hover" href="courses.html">Courses</a>
                         </li>
                         <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="#">Feed-Back</a>
+                            <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
                         </li>
                     </ul>
                     <div class="search-icon d-flex">
@@ -103,55 +98,55 @@
 
             </div>
     </nav>
-    <div style="height: 80vh;" class="container d-flex  justify-content-center align-items-center">
-
-        <form class="p-3" action="" method="post" name="registration">
-            <div class="row">
-                <div class="col-md-6">
-                    <label for="phone">PhoneNumber</label><br>
-                    <input type="password" class=" p-2" name="fpass" id="fpass" placeholder="Enter password">
+    <div class="container d-flex justify-content-center">
+        <div class="row ">
+            <form class="p-5  form" action="#" method="post" name="registration">
+                <h3>Login</h3>
+                <div class="col-md-5 w-100 ">
+                    <label for="phone number">Phone number</label>
+                    <input type="tel" class="c-inp form-control" name="phone" id="phone" placeholder="phone-number">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <label  for="fpass">password</label><br>
-                    <input type="password" + name="fpass" id="fpass" placeholder="enter your password">
+                <div class="col-md-5 w-100">
+                    <label for="password">Phone number</label>
+                    <input type="password" class="c-inp form-control" name="fpass" id="fpass"
+                        placeholder="Enter your passwrod">
                 </div>
-            </div>
-            <button id="button" type="submit" class="btn btn-outline-success mt-2">Register</button>
-            <p></p>
-        </form>
+                <hr class="dropdown-divider">
+                <button id="button" type="submit" class="btn btn-outline-warning w-100 mt-2">Register</button>
+                <p>don't have an account <a style="color: white;" href="SIgn-Up.html">Sign-up</a></p>
+            </form>
+        </div>
     </div>
     <script>
         $(function () {
-          $("form[name='registration']").validate({
-            rules: {
-              phone: {
-                required: true,
-                minlength: 11,
-                maxlength: 11,
-    
-              },
-              fpass: {
-                required: true,
-                minlength: 8
-              }
-            },
-            messages: {
-              firstname: "Please enter your firstname",
-              lastname: "Please enter your lastname",
-              fpass: {
-                required: "Please provide a password",
-                minlength: "password did'nt recognized"
-              }
-            },
-            submitHandler: function (form) {
-              form.submit();
-            }
-          });
+            $("form[name='registration']").validate({
+                rules: {
+                    phone: {
+                        required: true,
+                        minlength: 11,
+                        maxlength: 11,
+
+                    },
+                    fpass: {
+                        required: true,
+                        minlength: 8
+                    }
+                },
+                messages: {
+                    firstname: "Please enter your firstname",
+                    lastname: "Please enter your lastname",
+                    fpass: {
+                        required: "Please provide a password",
+                        minlength: "password did'nt recognized"
+                    }
+                },
+                submitHandler: function (form) {
+                    form.submit();
+                }
+            });
         });
-    
-      </script>
+
+    </script>
 </body>
 
-</html>
+</ht

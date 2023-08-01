@@ -22,6 +22,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Css\courses.css">
 </head>
+<style>
+    body {
+        color: white;
+    }
+</style>
 
 <body>
     <!-- nav bar -->
@@ -44,41 +49,18 @@
                                 href="AerobicMeditation.html">Home</a>
                         </li>
 
-                        <li class="mx-4 nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Articles
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Boosting Mental and physical Health</a></li>
-                                <li><a class="dropdown-item" href="#">Unleashing your full potential</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Cultivation mind body Hormony</a></li>
-                            </ul>
-                        </li>
-                        <li class="mx-4 nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Books
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">The power of flow</a></li>
-                                <li><a class="dropdown-item" href="#">The rythmic Path</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-
-                                <li><a class="dropdown-item" href="#">Mind-full Mtotion</a></li>
-                            </ul>
+                        <li class="mx-4 nav-item">
+                            <a class="nav-link x-hover" href="#">Aricles</a>
+                          </li>
+                        <li class="mx-4 nav-item">
+                          <a class="nav-link x-hover" href="books.html">Books</a>
                         </li>
 
                         <li class="mx-4 nav-item">
                             <a class="nav-link x-hover" href="courses.html">Courses</a>
                         </li>
                         <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="#">Feed-Back</a>
+                            <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
                         </li>
                     </ul>
                     <div class="search-icon d-flex">
@@ -92,68 +74,57 @@
     <!-- section one content-->
     <div class="container-fluid bg-dark d-flex justify-content-center align-items-center  c-sm">
         <div class="container">
-            <div class="row justify-content-between">
-                <div
-                    class="col-md-3 pt-1  bd-one d-flex align-items-center pb-2 justify-content-center  text-white mt-4">
-                    <div class="div">
-                        <b>Soulful-pulse</b>
-                        <p>
-                            <q>
-                                <i>
-                                    Soulful Pulse: A captivating rhythm that resonates deep within, touching hearts and
-                                    igniting
-                                    emotions with its soul-stirring melodies.
-                                </i>
-                            </q>
-                        </p>
-                        <p>Join our soulful course, awaken your inner harmony, and find profound inspiration in music's
-                            embrace.</p>
-                        <div class="d-flex justify-content-between">
-                            <button id="soulful" class="btn btn-outline-warning">Overview <i class="fa fa-fingerprint"></i></button>
-                            <button class="btn btn-outline-warning" onclick="document.location.href='eg.html'">Join Course</button>
-                        </div>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+                tabindex="0">
+
+                <div style="border:1px solid palevioletred ;box-shadow: 0px 0px 5px white;border-radius: 1rem;padding: 1rem;"
+                    class="row align-items-center">
+                    <div class="col-md-2 d-flex">
+                        <img src="Images\soulful.jpg" style="border-radius: 70%;width: 100px;height: 100px;" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <p style="letter-spacing: 1rem;" class="fs-2"><b>Soulful pulse</b></p> <br>
+                        <p>A captivating rhythm that resonates deep within, touching hearts and igniting emotions with
+                            its
+                            soul-stirring melodies.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="soulful" class="btn btn-outline-warning" onclick="document.location.href='#scroll-one'">Veiw-more</button>
+                        <button class="btn btn-outline-warning"
+                            onclick="document.location.href='eg.html'">Join-Course</button>
                     </div>
                 </div>
-                <div
-                    class="col-md-3 pt-1  bd-one d-flex align-items-center pb-2 justify-content-center  text-white mt-4">
-                    <div class="div">
-                        <b>Meditative Motion</b>
-                        <p>
-                            <q>
-                                <i>
-                                    Experience serenity in motion. Explore mindful movement and find inner peace through
-                                    our meditative motion course.
-                                </i>
-                            </q>
-                        </p>
-                        <p>Explore the Meditative Motion course, find inner calm through mindful movement and embrace
-                            tranquility in each breath.
-                        </p>
-                        <div class="d-flex justify-content-between">
-                            <button id="medition" class="btn btn-outline-warning">Overview  <i class="fa fa-fingerprint"></i></button>
-                            <button class="btn btn-outline-warning">Join Course</button>
-                        </div>
-                    </div>
+            </div>
+            <div style="border:1px solid palevioletred ;box-shadow: 0px 0px 5px white;border-radius: 1rem;padding: 1rem;"
+                class="row align-items-center mt-2">
+                <div class="col-md-2 d-flex">
+                    <img src="Images\meditation.webp" style="border-radius: 70%;width: 100px;height: 100px;" alt="">
                 </div>
-                <div
-                    class="col-md-3 pt-1  bd-one d-flex align-items-center pb-2 justify-content-center  text-white mt-4">
-                    <div class="div">
-                        <b>Feldenkrais Method</b>
-                        <p style="text-align: justify;">
-                            <q>
-                                <i>
-                                    Unlock Your Body's Wisdom: Experience Mindful Movement, Improve Posture, and
-                                    Discover Effortless Ease with Feldenkrais Method..
-                                </i>
-                            </q>
-                        </p>
-                        <p> Embark on a Journey of Self-Discovery and Transformative Movement with the Feldenkrais
-                            Method - A Path to Well-Being</p>
-                        <div class="d-flex justify-content-between">
-                            <button id="F-M" class="btn btn-outline-warning">Overview <i class="fa fa-fingerprint"></i></button>
-                            <button class="btn btn-outline-warning">Join Course</button>
-                        </div>
-                    </div>
+                <div class="col-md-7">
+                    <p style="letter-spacing: 1rem;" class="fs-2"><b>Meditative Motion</b></p> <br>
+                    <p>Experience serenity in motion. Explore mindful movement and find inner peace through
+                        our meditative motion course.</p>
+                </div>
+                <div class="col-md-3">
+                    <button id="medition" class="btn btn-outline-warning" onclick="document.location.href='#scroll-two'">Veiw-more</button>
+                    <button class="btn btn-outline-warning"
+                        onclick="document.location.href='eg.html'">Join-Course</button>
+                </div>
+            </div>
+            <div style="border:1px solid palevioletred ;box-shadow: 0px 0px 5px white;border-radius: 1rem;padding: 1rem;"
+                class="row align-items-center mt-2">
+                <div class="col-md-2 d-flex">
+                    <img src="Images\fm.jpg" style="border-radius: 70%;width: 100px;height: 100px;" alt="">
+                </div>
+                <div class="col-md-7">
+                    <p style="letter-spacing: 1rem;" class="fs-2"><b>Feldenkrais Method</b></p> <br>
+                    <p>Embark on a Journey of Self-Discovery and Transformative Movement with the Feldenkrais
+                        Method - A Path to Well-Being</p>
+                </div>
+                <div class="col-md-3">
+                    <button id="F-M" class="btn btn-outline-warning" onclick="document.location.href='#scroll-three'">Veiw-more</button>
+                    <button class="btn btn-outline-warning"
+                        onclick="document.location.href='eg.html'">Join-Course</button>
                 </div>
             </div>
         </div>
@@ -161,7 +132,7 @@
     <!-- Overveiew on Souolful-Pulse -->
     <div class="container-fluid bg-dark">
         <hr class="dropdown-divider">
-        <div class="container container-one">
+        <div id="scroll-one" class="container container-one">
             <div class="container C-hover-one d-flex justify-content-center align-items-center">
                 <div class="hover-img hover-one text-white">
                     Soulful-pulse
@@ -234,7 +205,7 @@
     <!-- Overveiew on Meditative Motion -->
     <div class="container-fluid bg-dark">
 
-        <div class="container container-two">
+        <div id="scroll-two" class="container container-two">
             <div class="container C-hover-one d-flex justify-content-center align-items-center">
                 <div class="hover-img hover-one text-white">
                     Meditative Motion
@@ -302,7 +273,7 @@
     <!-- Overveiew on Feldenkrais Method -->
     <div class="container-fluid bg-dark">
 
-        <div class="container container-three">
+        <div id="scroll-three" class="container container-three">
             <div class="container C-hover-one d-flex justify-content-center align-items-center">
                 <div class="hover-img hover-one text-white">
                     Feldenkrais Method
@@ -310,7 +281,9 @@
                 <div class="row text-white">
                     <h2 style="font-family:'Times New Roman', Times, serif; color: yellow;">Feldenkrais Method</h2>
                     <p style="line-height: 2rem;">
-                        The Feldenkrais Method is a mind-body approach to <mark style="background-color: yellow;"> movement and self-awareness.</mark> Through gentle exercises, it aims to improve flexibility, posture, and overall well-being.
+                        The Feldenkrais Method is a mind-body approach to <mark style="background-color: yellow;">
+                            movement and self-awareness.</mark> Through gentle exercises, it aims to improve
+                        flexibility, posture, and overall well-being.
                     </p>
                     <b>Types of Feldenkrais Method</b>
                     <ol class="">
@@ -438,7 +411,7 @@
             })
         })
     </script>
-    <script>  
+    <script>
         $(document).ready(function () {
             $("#soulful").click(function () {
                 $(".container-one").fadeToggle();
@@ -450,12 +423,13 @@
                 $(".container-one").hide();
                 $(".container-three").hide();
             });
-            
+
             $("#F-M").click(function () {
                 $(".container-two").hide();
                 $(".container-one").hide();
                 $(".container-three").fadeToggle();
-            })
+            });
+
         })
     </script>
 

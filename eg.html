@@ -23,6 +23,13 @@
   <link rel="stylesheet" href="Css\courses.css">
 </head>
 <style>
+  body {
+    /* background-image: url("https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg");
+    
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(221, 105, 47, 0.8127626050420168) 0%, rgba(121, 9, 83, 0.865983893557423) 55%); */
+    background-color: yellow;
+  }
+
   label {
     color: black;
   }
@@ -30,79 +37,56 @@
   .error {
     color: red;
   }
-  body{
+
+  body {
     overflow: scroll;
   }
-  form{
-    border: 1px solid rgba(39, 37, 37, 0.449) ;
+
+  form {
+    border: 1px solid rgba(39, 37, 37, 0.449);
   }
 </style>
 
 <body class="bg-light">
   <!-- main navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
-        <div class="container-fluid">
-            <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="#">Aerobic Meditation</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <div class="brand">
-                    <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="#">Aerobic Meditation</a>
-                </div>
-                <form class="d-md-flex ">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover active" aria-current="page"
-                                href="AerobicMeditation.html">Home</a>
-                        </li>
+    <div class="container-fluid">
+      <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="#">Aerobic Meditation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <div class="brand">
+          <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="#">Aerobic Meditation</a>
+        </div>
+        <form class="d-md-flex ">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover active" aria-current="page" href="AerobicMeditation.html">Home</a>
+            </li>
 
-                        <li class="mx-4 nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Articles
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Boosting Mental and physical Health</a></li>
-                                <li><a class="dropdown-item" href="#">Unleashing your full potential</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Cultivation mind body Hormony</a></li>
-                            </ul>
-                        </li>
-                        <li class="mx-4 nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Books
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">The power of flow</a></li>
-                                <li><a class="dropdown-item" href="#">The rythmic Path</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="#">Aricles</a>
+            </li>
+          <li class="mx-4 nav-item">
+            <a class="nav-link x-hover" href="books.html">Books</a>
+          </li>
 
-                                <li><a class="dropdown-item" href="#">Mind-full Mtotion</a></li>
-                            </ul>
-                        </li>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="courses.html">Courses</a>
+            </li>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
+            </li>
+          </ul>
+          <div class="search-icon d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </form>
 
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="courses.html">Courses</a>
-                        </li>
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="#">Feed-Back</a>
-                        </li>
-                    </ul>
-                    <div class="search-icon d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </div>
-                </form>
-
-            </div>
+      </div>
   </nav>
   <!-- Sign-up/In navbar -->
   <div class="container-fluid">
@@ -115,10 +99,10 @@
   </div>
   <!-- registration form -->
   <div class="container-fluid p-3">
-    <p class="text-center fs-2"><b>Welcome to registration page </b></p>
-      <p class="text-center">please register your self to proceed</p>
-   <form class="row g-3 needs-validation p-5 m-0" novalidate>
-      
+    <p class="text-center text-warning fs-2"><b>Welcome to registration page </b></p>
+    <p class="text-center text-warning">please register your self to proceed</p>
+    <form class="row g-3 needs-validation p-5 m-0" novalidate>
+
       <div class="col-md-4">
         <label for="validationCustom01" class="form-label">First name</label>
         <input type="text" class="form-control" id="validationCustom01" placeholder="enter your name" required>
@@ -137,9 +121,10 @@
         <label for="validationCustomUsername" class="form-label">Username</label>
         <div class="input-group has-validation">
           <span class="input-group-text" id="inputGroupPrepend">@</span>
-          <input type="text" class="form-control" id="validationCustomUsername" placeholder="enter your user name" aria-describedby="inputGroupPrepend" required>
+          <input type="text" class="form-control" id="validationCustomUsername" placeholder="enter your user name"
+            aria-describedby="inputGroupPrepend" required>
           <div class="invalid-feedback">
-            please enter your user name 
+            please enter your user name
           </div>
         </div>
       </div>
@@ -178,7 +163,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="col-12">
         <button class="btn btn-primary" type="submit">Submit form</button>
       </div>
@@ -186,25 +171,25 @@
   </div>
   <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
+    (function () {
+      'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
 
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
 
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
   </script>
 </body>
 

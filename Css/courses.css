@@ -17,8 +17,8 @@
     border-radius: 15px;
 }
 .c-sm{
-    height: 100vh;
-    
+    padding-bottom: 1rem;
+    color: white;
 }
 .bd-one{
     box-shadow: 0px 0px 15px orange;
@@ -50,7 +50,6 @@
 
     /* For mobile phones: */
     [class*="c-sm"] {
-        height: 50vh;
         overflow: scroll;
         width: 100vw;
         display: flex;
