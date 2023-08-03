@@ -1,0 +1,58 @@
+@media only screen and (max-width:768px) {
+  body {
+    padding: 1rem;
+  }
+}
+
+/* nav-bar css */
+.x-hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: white;
+  width: 0;
+  background-color: black;
+  transition: all 1s;
+}
+
+/* hover-after */
+.x-hover:hover::after {
+  width: 100%;
+  background: white;
+}
+
+/* home container style */
+.bgc-t {
+  background-image: linear-gradient(198deg,
+      hsl(305deg 100% 35%) 0%,
+      hsl(323deg 60% 51%) 30%,
+      hsl(342deg 68% 69%) 52%,
+      hsl(0deg 100% 90%) 56%);
+}
+
+.bgc {
+  height: 100vh;
+}
+
+.articles {
+  display: none;
+}
+
+.bd {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.bd .kl img {
+  transition: 0.4s;
+  height: 300px;
+}
+
+.bd .kl:hover>.img-z {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}

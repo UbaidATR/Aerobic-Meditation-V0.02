@@ -22,11 +22,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Css/books.css">
     <link rel="stylesheet" href="Css\home.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <style>
     .carousel-one {
         height: 100vh;
-        background-image: url("Images/soulful.jpg");
+        background-image: url("Images/book 1.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -35,7 +36,7 @@
 
     .carousel-two {
         height: 100vh;
-        background-image: url("Images/meditation.webp");
+        background-image: url("Images/book 2.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -44,7 +45,7 @@
 
     .carousel-three {
         height: 100vh;
-        background-image: url("Images/fm.jpg");
+        background-image: url("Images/fm.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -72,7 +73,7 @@
                         </li>
 
                         <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="#">Aricles</a>
+                            <a class="nav-link x-hover" href="aritcle.html">Aricles</a>
                         </li>
                         <li class="mx-4 nav-item">
                             <a class="nav-link x-hover" href="books.html">Books</a>
@@ -106,22 +107,28 @@
             <div class="carousel-item active carousel-one ">
                 <h1 data-fill-text="Aerobic-Meditation" class="span">The Aerobic Meditation Guide</h1>
                 <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-outline-warning">show more</button>
-                    <p><q>Revitalize Your Being: Unleashing the Power of Aerobic Meditation for Renewed Vitality and Inner Balance</q></p>
+                    <button class="btn btn-outline-warning" onclick="document.location.href='courses.html'">show
+                        more</button>
+                    <p><q>Revitalize Your Being: Unleashing the Power of Aerobic Meditation for Renewed Vitality and
+                            Inner Balance</q></p>
                 </div>
             </div>
             <div class="carousel-item carousel-two">
                 <h1 data-fill-text="Aerobic-Meditation" class="span">Rhythmic Tranquility</h1>
                 <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-outline-warning">show more</button>
-                    <p><q>Finding Peace in Motion: Embrace Serenity with Aerobic Meditation and Harmonize Your Soul</q></p>
+                    <button class="btn btn-outline-warning" onclick="document.location.href='courses.html'">show
+                        more</button>
+                    <p><q>Finding Peace in Motion: Embrace Serenity with Aerobic Meditation and Harmonize Your Soul</q>
+                    </p>
                 </div>
             </div>
             <div class="carousel-item carousel-three">
                 <h1 data-fill-text="Aerobic-Meditation" class="span">AeroMindfulness</h1>
                 <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-outline-warning">show more</button>
-                    <p><q>Flight to Stillness: Soar into Mindfulness with AeroMindfulness and Discover Inner Clarity</q></p>
+                    <button class="btn btn-outline-warning" onclick="document.location.href='courses.html'">show
+                        more</button>
+                    <p><q>Flight to Stillness: Soar into Mindfulness with AeroMindfulness and Discover Inner Clarity</q>
+                    </p>
                 </div>
             </div>
         </div>
@@ -130,15 +137,99 @@
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-next" " type=" button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="div">
-        
+    <!-- books.pdf -->
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="scale anime col-md-3">
+                <a href="pdf\Aerobic-Guide.pdf" target="_blank"><img src="Images\book 1.png" class="img-fluid z-m"
+                        alt=""></a>
+            </div>
+            <div class="scale vedio4 col-md-5 mt-2">
+                <a href="pdf\Mindfullness.pdf" target="_blank"><video src="vedio\book 3.mp4" class="img-fluid z-m"
+                        loop="true" autoplay="on"></video></a>
+            </div>
+            <div class="scale anime col-md-4 mt-2">
+                <a href="pdf\Rythmic Tranquility.pdf" target="_blank"><img src="Images\book 2.png" class="img-fluid z-m"
+                        alt=""></a>
+            </div>
+        </div>
     </div>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid p-2 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><b class="text-dark">Copyright © [2023] [Aerobic Meditation]. All rights reserved.</b></p>
+                        <p style="text-align: justify;">
+                            <q class="text-dark">Disclaimer: The information provided on this website is for general
+                                informational
+                                purposes only and
+                                should
+                                not be construed as medical advice or a substitute for professional healthcare. Always
+                                seek the advice of
+                                your physician or qualified healthcare provider with any questions or concerns you may
+                                have regarding your
+                                health or a medical condition.</q>
+                        </p>
+                    </div>
+                    <b>Stay Connected</b>
+                    <p class="text-dark">Subscribe to our newsletter for the latest updates, exclusive offers, and
+                        mindfulness tips.
+                    </p>
+                </div>
+            </div>
+            <div class="container pb-0 mb-0">
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        <ul style="width: max-content;">
+                            <li style="list-style-type: none;"><a href="#"
+                                    style="list-style-type: none; text-decoration: none;">Terms of Service</a></li>
+                            <li style="list-style-type: none;"><a href="#"
+                                    style="list-style-type: none; text-decoration: none;">Policy</a></li>
+                            <li style="list-style-type: none;"><a href="#"
+                                    style="list-style-type: none; text-decoration: none;">All rights reserved</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-warning">Contact us:</b><br>
+                        <a href="mailto:ubaidatr66@gmail.com"><i class="fa-solid fa-envelope text-dark"></i></a> &nbsp;
+                        &nbsp; &nbsp;
+                        <a href="https://wa.me/03165923893" target="_blank"><i
+                                class="fa-brands fa-whatsapp text-dark"></i></a>
+                        &nbsp;&nbsp; &nbsp;
+                        <i class="fa-brands fa-facebook text-dark"></i> &nbsp;&nbsp; &nbsp;
+                    </div>
+                    <div class="col-md-4">
+                        <b class="text-warning">Contact us:</b><br>
+                        <a href="#" target="_blank"><i class="fa-brands fa-twitter text-dark"></i></a> &nbsp; &nbsp;
+                        &nbsp;
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram text-dark"></i></a>
+                        &nbsp;&nbsp; &nbsp;
+                        <a href="#" target="_blank"><i class="fa-brands fa-tiktok text-dark"></i></a> &nbsp;&nbsp;
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: "300px",
+            duration: 5000,
+            delay: 400,
+        });
+        ScrollReveal().reveal(".vedio4", { delay: 300, origin: "bottom" });
+        ScrollReveal().reveal(".anime", { delay: 300, origin: "top" });
+    </script>
 </body>
 
 </html>
