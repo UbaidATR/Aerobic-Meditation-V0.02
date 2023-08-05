@@ -30,9 +30,10 @@
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
         <div class="container-fluid">
-            <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="#">Ubaid x ATR</a>
+            <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="AerobicMeditation.html"><img
+                    style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -40,7 +41,8 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <div class="brand">
-                    <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="#">Ubaid x ATR</a>
+                    <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="AerobicMeditation.html"><img
+                            style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
                 </div>
                 <form class="d-md-flex ">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -55,7 +57,6 @@
                         <li class="mx-4 nav-item">
                             <a class="nav-link x-hover" href="books.html">Books</a>
                         </li>
-
                         <li class="mx-4 nav-item">
                             <a class="nav-link x-hover" href="courses.html">Courses</a>
                         </li>
@@ -72,10 +73,9 @@
             </div>
     </nav>
     <!-- section one content-->
-    <div class="container-fluid bg-dark d-flex justify-content-center align-items-center  c-sm">
+    <div class="container-fluid bg-dark d-flex justify-content-center align-items-center p-2  c-sm">
         <div class="container">
-            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
-                tabindex="0">
+            
 
                 <div style="border:1px solid palevioletred ;box-shadow: 0px 0px 5px white;border-radius: 1rem;padding: 1rem;"
                     class="row align-items-center">
@@ -90,12 +90,11 @@
                     </div>
                     <div class="col-md-3">
                         <button id="soulful" class="btn btn-outline-warning"
-                            onclick="document.location.href='#scroll-one'">Veiw-more</button>
+                            onclick="navigateToElement2()">Veiw-more</button>
                         <button class="btn btn-outline-warning"
-                            onclick="document.location.href='eg.html'">Join-Course</button>
+                            onclick="document.location.href='Register.html'">Join-Course</button>
                     </div>
                 </div>
-            </div>
             <div style="border:1px solid palevioletred ;box-shadow: 0px 0px 5px white;border-radius: 1rem;padding: 1rem;"
                 class="row align-items-center mt-2">
                 <div class="col-md-2 d-flex">
@@ -110,7 +109,7 @@
                     <button id="medition" class="btn btn-outline-warning"
                         onclick="document.location.href='#scroll-two'">Veiw-more</button>
                     <button class="btn btn-outline-warning"
-                        onclick="document.location.href='eg.html'">Join-Course</button>
+                        onclick="document.location.href='Register.html'">Join-Course</button>
                 </div>
             </div>
             <div style="border:1px solid palevioletred ;box-shadow: 0px 0px 5px white;border-radius: 1rem;padding: 1rem;"
@@ -127,15 +126,15 @@
                     <button id="F-M" class="btn btn-outline-warning"
                         onclick="document.location.href='#scroll-three'">Veiw-more</button>
                     <button class="btn btn-outline-warning"
-                        onclick="document.location.href='eg.html'">Join-Course</button>
+                        onclick="document.location.href='Register.html'">Join-Course</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Overveiew on Souolful-Pulse -->
-    <div class="container-fluid bg-dark">
+    <div id="scroll-one" class="container-fluid bg-dark">
         <hr class="dropdown-divider">
-        <div id="scroll-one" class="container container-one">
+        <div  class="container container-one">
             <div class="container C-hover-one d-flex justify-content-center align-items-center">
                 <div class="hover-img hover-one text-white">
                     Soulful-pulse
@@ -413,6 +412,10 @@
                 $("#pop-types").slideUp();
             })
         })
+        function navigateToElement2() {
+            const element2 = document.getElementById("scroll-one");
+            element2.scrollIntoView({ behavior: "smooth" });
+        }
     </script>
     <script>
         $(document).ready(function () {

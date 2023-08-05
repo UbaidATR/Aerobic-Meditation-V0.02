@@ -1,0 +1,77 @@
+.countdown-section {
+    background-color: #ffd405;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .countdown-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  .counter-div {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    padding: 24px 0;
+  }
+  .counter-element {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .number-div {
+    background-color: #012a2f;
+    border-radius: 10px;
+    width: 80px;
+    padding: 12px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+  }
+  .element-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #012a2f;
+  }
+  .counter-animate {
+    animation: slideInFromTop 0.5s ease-in-out;
+  }
+  .show {
+    opacity: 1;
+  }
+  @media screen and (max-width: 450px) {
+    .number-div {
+      width: 60px;
+    }
+    .counter-div {
+      gap: 5px;
+    }
+    .et-desktop {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 451px) {
+    .et-mobile {
+      display: none;
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    from {
+      transform: translateY(-80%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  

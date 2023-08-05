@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link rel="stylesheet" href="Css\feedback.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="Css\feedback.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -24,117 +24,162 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="Css\courses.css">
 </head>
+<style>
+  .error {
+    color: red;
+  }
+</style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
-        <div class="container-fluid">
-          <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="#">Aerobic Meditation</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <div class="brand">
-              <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="#">Aerobic Meditation</a>
-            </div>
-            <form class="d-md-flex ">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="mx-4 nav-item">
-                  <a class="nav-link x-hover active" aria-current="page" href="AerobicMeditation.html">Home</a>
-                </li>
-    
-                <li class="mx-4 nav-item">
-                  <a class="nav-link x-hover" href="#">Aricles</a>
-                </li>
-              <li class="mx-4 nav-item">
-                <a class="nav-link x-hover" href="books.html">Books</a>
-              </li>
-    
-                <li class="mx-4 nav-item">
-                  <a class="nav-link x-hover" href="courses.html">Courses</a>
-                </li>
-                <li class="mx-4 nav-item">
-                  <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
-                </li>
-              </ul>
-              <div class="search-icon d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </div>
-            </form>
-    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+    <div class="container-fluid">
+      <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="AerobicMeditation.html"><img
+          style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <div class="brand">
+          <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="AerobicMeditation.html"><img
+              style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
+        </div>
+        <form class="d-md-flex ">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover active" aria-current="page" href="AerobicMeditation.html">Home</a>
+            </li>
+
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="aritcle.html">Aricles</a>
+            </li>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="books.html">Books</a>
+            </li>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="courses.html">Courses</a>
+            </li>
+            <li class="mx-4 nav-item">
+              <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
+            </li>
+          </ul>
+          <div class="search-icon d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </div>
-      </nav>
-    <div class="container">
-        <form class="form-container" method="post" name="registration">
-            <div class="headline"><span>feedback form</span></div>
-            <div class="form-line success">
-                <input name="name" id="name" type="text" class="form-input" value="Ubaid ATR">
-                <label class="top"></label>
-                <div class="check-label"></div>
-            </div>
-            <div class="form-line">
-                <input type="email" name="email" id="email" class="form-input" required>
-                <label></label>
-                <div class="error-label">Field is required!</div>
-                <div class="check-label"></div>
-            </div>
-            <div class="form-line">
-                <input name="subject" id="subject" type="text" class="form-input">
-                <label></label>
-                <div class="check-label"></div>
-            </div>
-            <div class="form-line">
-                <textarea name="textarea" id="textarea" class="form-input" required></textarea>
-                <label></label>
-                <div class="check-label"></div>
-                <div class="error-label">Field is required!</div>
-            </div>
-
-            <button id="button" type="submit" class="btn btn-outline-success mt-2">Register</button>
         </form>
+
+      </div>
+  </nav>
+  <div class="container-fluid bgt-c">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-md-5">
+        <form class="form" action="#" id="myform">
+          <p class="fs-3 text-center"><b>Welcome to feedback page</b></p>
+          
+          <label for="name"></label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+          <br>
+          <label for="subject"></label>
+          <input type="text" name="subject" class="form-control" placeholder="Subject" id="subject">
+          <br>
+          <label for="mail"></label>
+          <input type="email" name="mail" class="form-control" placeholder="Enter your E-mail" id="mail">
+          <br>
+          <label for="textarea"></label>
+          <textarea name="textarea" id="textarea" cols="50" class="form-control" rows="4"></textarea>
+          <br>
+          <label for=""></label>
+          <caption>your feedback is very important for us</caption><br><br>
+          <button class="btn btn-dark btn-outline-warning">submit</button>
+        </form>
+      </div>
     </div>
-    <script>
-        $(document).ready(function () {
-            $('.form-input').on('keyup, paste, cut, focusout', function () {
-                var $parent = $(this).parents('.form-line');
-                var input_value = $.trim($(this).val());
-                var required = $(this).is(':required');
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid p-2 bg-light">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <p><b class="text-dark">Copyright © [2023] [Aerobic Meditation]. All rights reserved.</b></p>
+                  <p style="text-align: justify;">
+                      <q class="text-dark">Disclaimer: The information provided on this website is for general
+                          informational
+                          purposes only and
+                          should
+                          not be construed as medical advice or a substitute for professional healthcare. Always seek
+                          the advice of
+                          your physician or qualified healthcare provider with any questions or concerns you may have
+                          regarding your
+                          health or a medical condition.</q>
+                  </p>
+              </div>
+              <b>Stay Connected</b>
+              <p class="text-dark">Subscribe to our newsletter for the latest updates, exclusive offers, and
+                  mindfulness tips.
+              </p>
+          </div>
+      </div>
+      <div class="container pb-0 mb-0">
+          <div class="row justify-content-between">
+              <div class="col-md-4">
+                  <ul style="width: max-content;">
+                      <li style="list-style-type: none;"><a href="#"
+                              style="list-style-type: none; text-decoration: none;">Terms of Service</a></li>
+                      <li style="list-style-type: none;"><a href="#"
+                              style="list-style-type: none; text-decoration: none;">Policy</a></li>
+                      <li style="list-style-type: none;"><a href="#"
+                              style="list-style-type: none; text-decoration: none;">All rights reserved</a></li>
+                  </ul>
+  
+              </div>
+              <div class="col-md-4">
+                  <b class="text-warning">Contact us:</b><br>
+                  <a href="mailto:ubaidatr66@gmail.com"><i class="fa-solid fa-envelope text-dark"></i></a> &nbsp;
+                  &nbsp; &nbsp;
+                  <a href="https://wa.me/03165923893" target="_blank"><i
+                          class="fa-brands fa-whatsapp text-dark"></i></a>
+                  &nbsp;&nbsp; &nbsp;
+                  <a href="https://www.facebook.com/profile.php?id=100078381462845&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook text-dark"></i></a> &nbsp;&nbsp; &nbsp;
+              </div>
+              <div class="col-md-4">
+                  <b class="text-warning">Contact us:</b><br>
+                  <a href="" target="_blank"><i class="fa-brands fa-twitter text-dark"></i></a> &nbsp; &nbsp; &nbsp;
+                  <a href="https://www.instagram.com/ubaidatr/" target="_blank"><i class="fa-brands fa-instagram text-dark"></i></a>
+                  &nbsp;&nbsp; &nbsp;
+                  <a href="https://www.tiktok.com/@r1_malik_9" target="_blank"><i class="fa-brands fa-tiktok text-dark"></i></a> &nbsp;&nbsp; &nbsp;
+              </div>
+          </div>
+      </div>
+  </div>
+  </footer>
+  <script>
+    $(document).ready(function () {
 
-                if (input_value.length > 0) {
-                    $parent.find('label').addClass('top');
-
-                    $parent
-                        .removeClass('error')
-                        .addClass('success');
-                } else {
-                    $parent.find('label').removeClass('top');
-                    $parent.removeClass('success')
-
-                    if (required) {
-                        $parent.addClass('error');
-                    }
-                }
-            });
-        });
-        function isEmail(email) {
-            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-            return regex.test(email);
+      $('#myform').validate({ // initialize the plugin
+        rules: {
+          name: {
+            required: true,
+            minlength: 3,
+          },
+          subject: {
+            required: true,
+            minlength: 4
+          },
+          mail: {
+            required: true,
+            minlength: 4
+          },
+          textarea: {
+            required: true,
+            minlength: 4
+          }
         }
-        $(function () {
-            $("form[name='registration']").validate({
-                rules: {
-                    email:"required",
-                    name:"required",
-                    subject:"required",
-                    textarea:"required"
-                },
-                message: {
+      });
 
-                }
-            })
-        })
-    </script>
+    });
+  </script>
 </body>
 
 </html>
