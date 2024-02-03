@@ -3,11 +3,11 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1;
 }
+nav{
+  box-shadow: 0 -6px 7px -7px grey inset;
+}
 .bgt-c {
     height: 100vh;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(221, 105, 47, 0.9780287114845938) 0%, rgba(121, 9, 83, 0.9500175070028011) 55%);
-
   }
   .bgt-c row{
     align-items: center;
@@ -16,5 +16,5 @@
     
     padding: 3rem;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.481);
+    background-color: rgba(255, 255, 255, 0.181);
   }

@@ -28,14 +28,29 @@
   <link rel="stylesheet" href="Css\carousel.css">
 </head>
 <style>
+  audio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    /* Ensure it's above other content */
+  }
 </style>
 
 <body class="bg-dark">
   <div id="load-wrapper" class="container-fliud load-wrapper">
     <i id="loading" class="fa fa-spin fa-spinner"></i>
   </div>
+  <script>
+    $(window).on("load", function () {
+      $("#load-wrapper").fadeOut("slow");
+    });
+  </script>
   <!-- nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark p-2">
     <div class="container-fluid">
       <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="AerobicMeditation.html"><img
           style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
@@ -48,35 +63,48 @@
           <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="AerobicMeditation.html"><img
               style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
         </div>
-        <form class="d-md-flex ">
+        <form class="d-md-flex ct">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="mx-4 nav-item">
-              <a class="nav-link x-hover active" aria-current="page" href="AerobicMeditation.html">Home</a>
+              <a class="nav-link x-hover text-white active" aria-current="page" href="AerobicMeditation.html">Home</a>
             </li>
 
             <li class="mx-4 nav-item">
-              <a class="nav-link x-hover" href="aritcle.html">Aricles</a>
+              <a class="nav-link x-hover text-white" href="aritcle.html">Articles</a>
             </li>
             <li class="mx-4 nav-item">
-              <a class="nav-link x-hover" href="books.html">Books</a>
+              <a class="nav-link x-hover text-white" href="books.html">Books</a>
             </li>
             <li class="mx-4 nav-item">
-              <a class="nav-link x-hover" href="courses.html">Courses</a>
+              <a class="nav-link x-hover text-white" href="courses.html">Courses</a>
             </li>
             <li class="mx-4 nav-item">
-              <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
+              <a class="nav-link x-hover text-white" href="feedback.html">Feed-Back</a>
             </li>
           </ul>
           <div class="search-icon d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </div>
         </form>
 
       </div>
   </nav>
+  <!-- sing-in+sign-up -->
+  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+    <div class="container-fluid">
+      <div style="display: flex;justify-content: end;" class="div">
+        <div class="col-4 mt-2">
+          <button onclick="document.location.href='SIgn-Up.html'"
+            class="btn btn-dark btn-outline-warning">Sign-Up</button>
+          <button onclick="document.location.href='login.html'"
+            class="btn btn-dark btn-outline-warning">Sign-In</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Section one -->
-  <div class="container-fluid bg-dark d-sm-none d-md-block index">
+  <div class="container-fluid bg-dark d-sm-none d-md-block index d-cu-none">
     <div id="C-C" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
       data-bs-pasue="fasle">
       <div class="carousel-indicators">
@@ -94,39 +122,40 @@
 
           <div class="container d-flex">
             <div class="col-md-7">
-              <h1 data-fill-text="Aerobic-Meditation" class="fill-anim">Aerobic-Meditation</h1>
+              <h1 data-fill-text="Embrace the rhythm" class="fill-anim">Embrace the rhythm</h1>
             </div>
             <div class="circle">
               <a href="books.html">Show more</a>
             </div>
             <div style="position: absolute; margin-left: 450px;" class="col-md-5">
-              <img src="Images\Aero-exercise.jpg" alt="" style="height: 300px;" class="anim-img">
+              <img src="Images/Aero-exercise.png" alt="" style="height: 300px;" class="anim-img">
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="container d-flex">
             <div class="col-md-7">
-              <h1 data-fill-text="Aerobic-Meditation" class="fill-anim">Aerobic-Meditation</h1>
+              <h1 data-fill-text="Inhale the positivity" class="fill-anim">Inhale the positivity</h1>
             </div>
             <div class="circle ">
-              <a href="#">Show more</a>
+              <a href="books.html">Show more</a>
             </div>
             <div style="position: absolute; margin-left: 450px;" class="col-md-5">
-              <img src="Images\Aero-exercise.jpg" alt="" style="height: 300px;" class="anim-img">
+              <video src="Images\Carousel 2.mp4" loop autoplay style="height: 300px;width: 700px;"
+                class="anim-img"></video>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="container d-flex">
             <div class="col-md-7">
-              <h1 data-fill-text="Aerobic-Meditation" class="fill-anim">Aerobic-Meditation</h1>
+              <h1 data-fill-text="Find your balance" class="fill-anim">Find your balance</h1>
             </div>
             <div class="circle ">
-              <a href="#">Show more</a>
+              <a href="books.html">Show more</a>
             </div>
             <div style="position: absolute; margin-left: 450px;" class="col-md-5">
-              <img src="Images\Aero-exercise.jpg" alt="" style="height: 300px;" class="anim-img">
+              <img src="Images\carouse 3.png" alt="" style="height: 300px;" class="anim-img">
             </div>
           </div>
         </div>
@@ -182,7 +211,7 @@
       <h1 class="text-warning">Aerobic Meditation</h1>
     </div>
     <div class="row">
-      <div class="row">
+      <div class="row kj">
         <div class="col-md-12 ">
           <h3 class="text-info">Introduction to Aerobic Meditation</h3>
           <p class="text-white" style="text-align: justify;">
@@ -208,12 +237,12 @@
           Runners can observe their footsteps, the rhythm of their breath, and the surrounding environment to enhance
           their mindful experience.</p>
       </div>
-      <div class="col-md-5"><video src="vedio\medi-yoga-2.mp4" autoplay="'true" loop class="img-fluid vedio4" controls
+      <div class="col-md-5"><video src="vedio\medi-yoga-2.mp4" autoplay="'true" loop class="img-fluid vedio4"
           class="vedio4"></video></div>
     </div>
     <div class="row mt-3 justify-content-between align-items-center">
       <div class="col-md-5 d-md-flex d-lg-d-md-flex d-sm-none"><video src="vedio\medi-yoga-3.mp4" autoplay="'true" loop
-          class="img-fluid vedio4" controls class="vedio4"></video></div>
+          class="img-fluid vedio4" class="vedio4"></video></div>
       <div class="col-md-6">
         <h3 class="text-warning">2)Yoga or Tai Chi-Based Aerobic Meditation:</h3>
         <p style="text-align: justify;">Yoga and Tai Chi are practices that combine physical movement, breath control,
@@ -223,7 +252,7 @@
           state while engaging in the aerobic aspects of these practices.</p>
       </div>
       <div class="col-md-5 d-md-none d-lg-none d-sm-block"><video src="vedio\medi-yoga-3.mp4" autoplay="'true" loop
-          class="img-fluid vedio4" controls class="vedio4"></video></div>
+          class="img-fluid vedio4" class="vedio4"></video></div>
     </div>
     <div class="row mt-3 justify-content-center align-items-center">
       <div class="col-md-6">
@@ -234,7 +263,7 @@
           emotions, and the music. Dance meditation can be done individually or in group settings, allowing participants
           to experience a sense of liberation, joy, and self-discovery.</p>
       </div>
-      <div class="col-md-5"><video src="vedio\medi-yoga-3.mp4" autoplay="'true" loop class="img-fluid vedio4" controls
+      <div class="col-md-5"><video src="Images/Carousel5.mp4" autoplay loop class="img-fluid vedio4"
           class="vedio4"></video></div>
     </div>
   </div>
@@ -288,6 +317,7 @@
       </div>
     </div>
   </div>
+  <audio src="ok.mp3" controls id="audio"></audio>
   <script>
     $(window).on("load", function () {
       $("#load-wrapper").fadeOut("slow");
@@ -304,7 +334,7 @@
     ScrollReveal().reveal(".vedio4", { delay: 300, origin: "bottom" });
     ScrollReveal().reveal(".anime", { delay: 300, origin: "top" });
     ScrollReveal().reveal("#btn-anime", { delay: 150, origin: "bottom" });
-    ScrollReveal().reveal("#tags", { delay: 150, origin: "bottom" });
+    ScrollReveal().reveal("#tags", { delay: 150, origin: "top" });
   </script>
   <script>
     $(document).ready(function () {
@@ -321,6 +351,24 @@
         $("#show-more-2").toggle("slow");
       })
     })
+  </script>
+  <script>
+    const label = document.querySelector('#audio');
+    // label.addEventListener('mousemove',()=>{
+    //     audio.play();
+    //     audio.muted();
+    // });
+    const audio = document.getElementById("audio");
+    window.addEventListener("mousemove", () => {
+      audio.play();
+      audio.addEventListener("ended", function () {
+        audio.style.display='none';
+        audio.pause();
+        audio.muted = true;
+      });
+
+    });
+
   </script>
 </body>
 

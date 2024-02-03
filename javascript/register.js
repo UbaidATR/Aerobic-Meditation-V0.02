@@ -49,7 +49,7 @@ function timingCalc(endtime) {
     }
   }
   
-  var DeadLine = new Date(Date.parse("25 Dec 2023 00:00:00 GMT"));
+  var DeadLine = new Date(Date.parse("25 Dec 2024 00:00:00 GMT"));
   
   setInterval(function () {
     startCalc(DeadLine);

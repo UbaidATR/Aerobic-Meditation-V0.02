@@ -21,6 +21,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Css\courses.css">
+    <link rel="stylesheet" href="Css/custom.css">
 </head>
 <style>
     body {
@@ -29,50 +30,53 @@
 </style>
 
 <body>
+    <!-- loader -->
+    <div id="load-wrapper" class="container-fliud load-wrapper">
+        <i id="loading" class="fa fa-spin fa-spinner"></i>
+      </div>
+      
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark p-2">
         <div class="container-fluid">
-            <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="AerobicMeditation.html"><img
-                    style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <div class="brand">
-                    <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="AerobicMeditation.html"><img
-                            style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
-                </div>
-                <form class="d-md-flex ">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover active" aria-current="page"
-                                href="AerobicMeditation.html">Home</a>
-                        </li>
-
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="aritcle.html">Aricles</a>
-                        </li>
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="books.html">Books</a>
-                        </li>
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="courses.html">Courses</a>
-                        </li>
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
-                        </li>
-                    </ul>
-                    <div class="search-icon d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </div>
-                </form>
-
+          <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="AerobicMeditation.html"><img
+              style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <div class="brand">
+              <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="AerobicMeditation.html"><img
+                  style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
             </div>
-    </nav>
-    <!-- section one content-->
+            <form class="d-md-flex ct">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white active" aria-current="page" href="AerobicMeditation.html">Home</a>
+                </li>
+    
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white" href="aritcle.html">Articles</a>
+                </li>
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white" href="books.html">Books</a>
+                </li>
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white" href="courses.html">Courses</a>
+                </li>
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white" href="feedback.html">Feed-Back</a>
+                </li>
+              </ul>
+              <div class="search-icon d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </div>
+            </form>
+    
+          </div>
+      </nav>
+    <!-- section one carousel content-->
     <div class="container-fluid bg-dark d-flex justify-content-center align-items-center p-2  c-sm">
         <div class="container">
             
@@ -92,7 +96,7 @@
                         <button id="soulful" class="btn btn-outline-warning"
                             onclick="navigateToElement2()">Veiw-more</button>
                         <button class="btn btn-outline-warning"
-                            onclick="document.location.href='Register.html'">Join-Course</button>
+                            onclick="document.location.href='new.html'">Join-Course</button>
                     </div>
                 </div>
             <div style="border:1px solid palevioletred ;box-shadow: 0px 0px 5px white;border-radius: 1rem;padding: 1rem;"
@@ -109,7 +113,7 @@
                     <button id="medition" class="btn btn-outline-warning"
                         onclick="document.location.href='#scroll-two'">Veiw-more</button>
                     <button class="btn btn-outline-warning"
-                        onclick="document.location.href='Register.html'">Join-Course</button>
+                        onclick="document.location.href='new.html'">Join-Course</button>
                 </div>
             </div>
             <div style="border:1px solid palevioletred ;box-shadow: 0px 0px 5px white;border-radius: 1rem;padding: 1rem;"
@@ -126,7 +130,7 @@
                     <button id="F-M" class="btn btn-outline-warning"
                         onclick="document.location.href='#scroll-three'">Veiw-more</button>
                     <button class="btn btn-outline-warning"
-                        onclick="document.location.href='Register.html'">Join-Course</button>
+                        onclick="document.location.href='new.html'">Join-Course</button>
                 </div>
             </div>
         </div>
@@ -155,7 +159,7 @@
                         <li>Soulful Pulse of Words</li>
                         <li>Soulful Pulse of Spirituality</li>
                     </ol class="">
-                    <p><b class="fs-4 text-info">Does and Don't of soulful pulse</b></p>
+                    <p><b class="fs-4 text-warning">Does and Don't of soulful pulse</b></p>
                     <b class="text-warning">Do's of Soulful Pulse Activities:</b>
                     <ul class="">
                         <li>Do Embrace Emotions: Allow yourself to feel and express emotions freely through the chosen
@@ -172,7 +176,7 @@
                         <li>Do Be Open-Minded: Be open to trying different types of soulful pulse activities to discover
                             what brings you the most joy and fulfillment.</li>
                     </ul>
-                    <p><i class="text-success">And while "don'ts" in the traditional sense may not directly apply, here
+                    <p><i >And while "don'ts" in the traditional sense may not directly apply, here
                             are
                             some considerations
                             to keep in mind:</i></p>
@@ -213,7 +217,7 @@
                     Meditative Motion
                 </div>
                 <div class="row text-white">
-                    <h2 style="font-family:'Times New Roman', Times, serif; color: yellow;">Meditative Motion</h2>
+                    <h2 class="text-warning">Meditative Motion</h2>
                     <p style="line-height: 2rem;">
                         Harmonious practice fusing mindfulness and gentle movements for <mark
                             style="background-color: yellow;">inner peace, relaxation, and well-being</mark> . Breath
@@ -225,7 +229,7 @@
                         <li>Pilates:</li>
                         <li>Walking Meditation</li>
                     </ol class="">
-                    <p class="text-success">Certainly! Here are some general "do's and don'ts" to keep in mind while
+                    <p class="text-light">Certainly! Here are some general "do's and don'ts" to keep in mind while
                         engaging in meditative motion practices:</p>
                     <b class="text-warning">Do's of Meditative Motion:</b>
                     <ul class="">
@@ -241,7 +245,7 @@
                             experience
                             its full benefits and effects.</li>
                     </ul>
-                    <p><i class="text-success">And while "don'ts" in the traditional sense may not directly apply, here
+                    <p><i >And while "don'ts" in the traditional sense may not directly apply, here
                             are
                             some considerations
                             to keep in mind:</i></p>
@@ -292,7 +296,7 @@
                         <li>Awareness Through Movement (ATM)</li>
                         <li>Functional Integration (FI)</li>
                     </ol class="">
-                    <p class="text-success">Certainly! Here are some general "do's and don'ts" to keep in mind while
+                    <p >Certainly! Here are some general "do's and don'ts" to keep in mind while
                         engaging in meditative motion practices:</p>
                     <b class="text-warning">Dos for Feldenkrais Method:</b>
                     <ul class="">
@@ -313,7 +317,7 @@
                             Progress may be gradual, so give yourself time to absorb and integrate the learning.
                         </li>
                     </ul>
-                    <p><i class="text-success">Don'ts for Feldenkrais Method:</i></p>
+                    <p><i >Don'ts for Feldenkrais Method:</i></p>
                     <b class="text-warning">Don'ts of Meditative Motion:</b>
                     <ul>
                         <li>
@@ -337,7 +341,6 @@
             </div>
         </div>
     </div>
-
     <!-- section three footer -->
     <div class="container-fluid p-2 bg-light">
         <div class="container">
@@ -438,7 +441,11 @@
 
         })
     </script>
-
+<script>
+    $(window).on("load", function () {
+      $("#load-wrapper").fadeOut("slow");
+    });
+  </script>
 </body>
 
 </html>

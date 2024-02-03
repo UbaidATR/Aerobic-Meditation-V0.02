@@ -1,12 +1,27 @@
 .x-hover::after {
     content: "";
     display: block;
-    height: 2px;
+    height: 5px;
     background-color: white;
     width: 0;
     background-color: rgb(0, 101, 209);
     transition: all 1s;
 }
+nav{
+    box-shadow: 0 -6px 7px -7px grey inset;
+  }
+form .form-control {
+    outline: none;
+    border: 1px sloid white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+    color:white;
+  }
+  
+  form .btn-bg {
+    border-radius: 20px;
+  }
+  
 
 /* hover-after */
 .x-hover:hover::after {
@@ -27,11 +42,28 @@
 .x-hover::after {
     content: "";
     display: block;
-    height: 2px;
+    height: 5px;
     background-color: white;
     width: 0;
     background-color: black;
     transition: all 1s;
+}
+.load-wrapper {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.load-wrapper #loading {
+    color: white;
+    font-size: xx-large;
 }
 
 /* hover-after */

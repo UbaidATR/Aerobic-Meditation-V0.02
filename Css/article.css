@@ -3,12 +3,14 @@
     padding: 1rem;
   }
 }
-
+nav{
+  box-shadow: 0 -6px 7px -7px grey inset;
+}
 /* nav-bar css */
 .x-hover::after {
   content: "";
   display: block;
-  height: 2px;
+  height: 5px;
   background-color: white;
   width: 0;
   background-color: black;
@@ -20,15 +22,37 @@
   width: 100%;
   background: white;
 }
+form .form-control {
+  outline: none;
+  border: 1px sloid white;
+  background: none;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px black;
+}
+
+form .btn-bg {
+  border-radius: 20px;
+}
+.load-wrapper {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.load-wrapper #loading {
+  color: white;
+  font-size: xx-large;
+}
 
 /* home container style */
-.bgc-t {
-  background-image: linear-gradient(198deg,
-      hsl(305deg 100% 35%) 0%,
-      hsl(323deg 60% 51%) 30%,
-      hsl(342deg 68% 69%) 52%,
-      hsl(0deg 100% 90%) 56%);
-}
 
 .bgc {
   height: 100vh;
@@ -80,4 +104,15 @@ width: 100%;
 }
 .card{
   box-shadow: 0px 0px 20px black;
+}
+@media only screen and (max-width: 768px) {
+  .cus-css-three{
+    transform: translate(-25%,-182%);
+  }
+  .cus-css-three:hover{
+    transform: translate(-0%,-182%);
+  }
+  .cus-css-two{
+    transform: translate(20%,-30%);
+  }
 }

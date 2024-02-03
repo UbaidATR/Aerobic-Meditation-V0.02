@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="Css/books.css">
     <link rel="stylesheet" href="Css\home.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="Css/custom.css">
 </head>
 <style>
     .carousel-one {
@@ -54,96 +55,54 @@
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+    <!-- loader -->
+    <div id="load-wrapper" class="container-fliud load-wrapper">
+        <i id="loading" class="fa fa-spin fa-spinner"></i>
+      </div>
+      
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark p-2">
         <div class="container-fluid">
-            <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="AerobicMeditation.html"><img
-                    style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <div class="brand">
-                    <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="AerobicMeditation.html"><img
-                            style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
-                </div>
-                <form class="d-md-flex ">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover active" aria-current="page"
-                                href="AerobicMeditation.html">Home</a>
-                        </li>
-
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="aritcle.html">Aricles</a>
-                        </li>
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="books.html">Books</a>
-                        </li>
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="courses.html">Courses</a>
-                        </li>
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
-                        </li>
-                    </ul>
-                    <div class="search-icon d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </div>
-                </form>
-
+          <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="AerobicMeditation.html"><img
+              style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <div class="brand">
+              <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="AerobicMeditation.html"><img
+                  style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
             </div>
-    </nav>
-    <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active carousel-one ">
-                <h1 data-fill-text="Aerobic-Meditation" class="span">The Aerobic Meditation Guide</h1>
-                <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-dark btn-outline-warning">Scroll down to view the main contengt</button>
-                    <p><q>Revitalize Your Being: Unleashing the Power of Aerobic Meditation for Renewed Vitality and
-                            Inner Balance</q></p>
-                </div>
-            </div>
-            <div class="carousel-item carousel-two">
-                <h1 data-fill-text="Aerobic-Meditation" class="span">Rhythmic Tranquility</h1>
-                <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-dark btn-outline-warning">Scroll down to view the main contengt</button>
-                    <p><q>Finding Peace in Motion: Embrace Serenity with Aerobic Meditation and Harmonize Your Soul</q>
-                    </p>
-                </div>
-            </div>
-            <div class="carousel-item carousel-three">
-                <h1 data-fill-text="Aerobic-Meditation" class="span">AeroMindfulness</h1>
-                <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-dark btn-outline-warning">Scroll down to view the  main content</button>
-                    <p><q>Flight to Stillness: Soar into Mindfulness with AeroMindfulness and Discover Inner Clarity</q>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type=" button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+            <form class="d-md-flex ct">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white active" aria-current="page" href="AerobicMeditation.html">Home</a>
+                </li>
+    
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white" href="aritcle.html">Articles</a>
+                </li>
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white" href="books.html">Books</a>
+                </li>
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white" href="courses.html">Courses</a>
+                </li>
+                <li class="mx-4 nav-item">
+                  <a class="nav-link x-hover text-white" href="feedback.html">Feed-Back</a>
+                </li>
+              </ul>
+              <div class="search-icon d-flex">
+                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </div>
+            </form>
+    
+          </div>
+      </nav>
     <!-- books.pdf -->
+    <h1 class="text-warning fs-2 mt-5 mb-5">Here's the best <mark>free</mark>books for meditation</h1>
     <div class="container-fluid p-2 bgt-c">
         <div class="row">
             <h3 class="text-center"><b>Get the free pdf books now </b></h3>
@@ -221,6 +180,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(window).on("load", function () {
+          $("#load-wrapper").fadeOut("slow");
+        });
+      </script>
     <script>
         ScrollReveal({
             reset: true,

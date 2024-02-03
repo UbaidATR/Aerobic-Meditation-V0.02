@@ -25,11 +25,16 @@
     <link rel="shortcut icon" href="Images\favicon-Logo.png" type="image/x-icon" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="Css/article.css">
+    <link rel="stylesheet" href="Css/custom.css">
 </head>
 
 <body>
+    <!-- loader -->
+    <div id="load-wrapper" class="container-fliud load-wrapper">
+        <i id="loading" class="fa fa-spin fa-spinner"></i>
+      </div>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark p-2">
         <div class="container-fluid">
             <a class="navbar-brand d-lg-none d-md-none d-sm-block" href="AerobicMeditation.html"><img
                     style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
@@ -43,24 +48,24 @@
                     <a class="navbar-brand d-lg-block d-md-block d-sm-none" href="AerobicMeditation.html"><img
                             style="width: 100px;height: 60px;" src="Images\Logo.png" alt="Aerobic-Meditation"></a>
                 </div>
-                <form class="d-md-flex ">
+                <form class="d-md-flex ct">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover active" aria-current="page"
+                            <a class="nav-link x-hover text-white active" aria-current="page"
                                 href="AerobicMeditation.html">Home</a>
                         </li>
 
                         <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="aritcle.html">Aricles</a>
+                            <a class="nav-link x-hover text-white" href="aritcle.html">Articles</a>
                         </li>
                         <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="books.html">Books</a>
+                            <a class="nav-link x-hover text-white" href="books.html">Books</a>
                         </li>
                         <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="courses.html">Courses</a>
+                            <a class="nav-link x-hover text-white" href="courses.html">Courses</a>
                         </li>
                         <li class="mx-4 nav-item">
-                            <a class="nav-link x-hover" href="feedback.html">Feed-Back</a>
+                            <a class="nav-link x-hover text-white" href="feedback.html">Feed-Back</a>
                         </li>
                     </ul>
                     <div class="search-icon d-flex">
@@ -72,54 +77,54 @@
             </div>
     </nav>
     <!-- main page -->
-    <div class="bgc-t container-fluid">
+    <div class="bgc-t container-fluid bg-dark">
         <div class="row">
             <div class="col-md-12  d-flex justify-content-center align-items-center bgc">
                 <div class="div text-center">
-                    <b><span class="fs-1">Unlock the Power of Aerobic</span>
-                        <br> <span class="fs-2">Meditation:Move, Breathe,</span> <br> <span class="fs-3"
+                    <b><span class="fs-1 text-light">Unlock the Power of Aerobic</span>
+                        <br> <span class="fs-2 text-light">Meditation:Move, Breathe,</span> <br> <span class="fs-3"
                             style="letter-spacing: 0.5rem;">Thrive!</span></b><br>
-                    <button id="hideShowButton" class="btn btn-outline-dark" onclick="navigateToElement2()">Show More <i
-                            class="fa fa-arrow-down"></i></button>
+                    <button id="hideShowButton" class="btn btn-outline-warning" onclick="navigateToElement2()">Show More
+                        <i class="fa fa-arrow-down"></i></button>
                 </div>
             </div>
         </div>
     </div>
     <!-- article -->
     <section id="m-sec">
-        <div class="container-fluid mt-3 articles bg-dark pt-3">
+        <div class="container-fluid mt-1 articles bg-dark pt-3">
             <div class="row justify-content-center" style="align-items: baseline;">
-                <div class="col-md-4 mx-2 col-sm-5 bd">
-                    <div class="card ki kn">
-                        <video src="vedio\destraction-article.mp4" controls class="card-img-top" style="height: 300px;" loop
+                <div class="col-md-4 cus-css mx-2 col-sm-5 bd">
+                    <div class="card  ki kn">
+                        <video src="vedio\destraction-article.mp4" class="card-img-top" style="height: 300px;" loop
                             autoplay></video>
                         <div class="card-body">
-                            <h5 class="card-title">"Distraction"</h5>
-                            <p class="card-text"><b>Embrace the Flow, Let Distractions Go</b></p>
+                            <h5 class="card-title text-dark">"Distraction"</h5>
+                            <p class="card-text text-dark"><b>Embrace the Flow, Let Distractions Go</b></p>
                             <a href="Articleone.html" class="btn btn-primary">Read article</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-5 bd tx">
+                <div class="col-md-4 cus-css-two col-sm-5 bd tx">
                     <div class="card kl">
                         <img src="Images\Benefits AM.png" class="card-img-top img-z" style="height: 200px;" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Exploring the Benefits of Aerobic Meditation</h5>
-                            <p class="card-text"><b>Unlocking Inner Peace and Vitality Through Aerobic Meditation
+                            <h5 class="card-title text-dark">Exploring the Benefits of Aerobic Meditation</h5>
+                            <p class="card-text text-dark"><b>Unlocking Inner Peace and Vitality Through Aerobic Meditation
                                     🌿🧘‍♂️</b></p>
-                            <a href="#" class="btn btn-primary">Read article</a>
+                            <a href="Articletwo.html" class="btn btn-primary">Read article</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-6 bd kc">
+                <div class="cus-css-three col-md-4 col-sm-6 bd kc">
                     <div class="card km">
                         <img src="Images\soulful.jpg" class="card-img-top img-z" style="height: 180px;" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Mindful Moves</h5>
-                            <p class="card-text"><b>Harmonizing Body and Mind with Mindful Moves 🕊️.</b></p>
-                            <a href="#" class="btn btn-primary">Read article</a>
+                            <h5 class="card-title text-dark">Mindful Moves</h5>
+                            <p class="card-text text-dark"><b>Harmonizing Body and Mind with Mindful Moves 🕊️.</b></p>
+                            <a href="Articlethree.html" class="btn btn-primary">Read article</a>
                         </div>
                     </div>
                 </div>
@@ -195,6 +200,11 @@
             })
         });
     </script>
+    <script>
+        $(window).on("load", function () {
+          $("#load-wrapper").fadeOut("slow");
+        });
+      </script>
 </body>
 
 </html>
